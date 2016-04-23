@@ -1,0 +1,11 @@
+run
+last
+set scalaJSUseRhino in Global := false
+run
+set scalaJSUseRhino in Global := false
+run
+fastOptJS
+run
+reload
+fastOptJS
+~fastOptJS
