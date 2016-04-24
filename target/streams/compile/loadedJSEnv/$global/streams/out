@@ -1,1 +1,13 @@
-[0m[[0mdebug[0m] [0mLoading JSEnv with linked file /Users/hamishdickson/Programming/tooting-strength/target/scala-2.11/tooting-strength-fastopt.js[0m
+[0m[[0mdebug[0m] [0mGenerating LinkingUnit for JSEnv RhinoJSEnv[0m
+[0m[[0mdebug[0m] [0mLinker: Compute reachability: 23733 us[0m
+[0m[[0mdebug[0m] [0mLinker: Assemble LinkedClasses: 8972 us[0m
+[0m[[0mdebug[0m] [0mBasic Linking: 34054 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Batch mode: false[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Incremental part: 5711 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizing 0 methods.[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: Optimizer part: 125 us[0m
+[0m[[0mdebug[0m] [0mInc. optimizer: 8582 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Compute reachability: 19296 us[0m
+[0m[[0mdebug[0m] [0mRefiner: Assemble LinkedClasses: 2180 us[0m
+[0m[[0mdebug[0m] [0mRefiner: 21569 us[0m
+[0m[[0mdebug[0m] [0mLoading JSEnv with LinkingUnit[0m

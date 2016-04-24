@@ -4,7 +4,7 @@
 		module="tooting-strength_sjs0.6_2.11"
 		revision="0.1-SNAPSHOT"
 		status="integration"
-		publication="20160423110630"
+		publication="20160423181035"
 	>
 		<description>
 		tooting-strength
@@ -34,17 +34,19 @@
 		<artifact name="tooting-strength_sjs0.6_2.11" type="doc" ext="jar" conf="docs" e:classifier="javadoc"/>
 	</publications>
 	<dependencies>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" transitive="false" conf="ensime-internal->default(compile)"/>
-		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.7" conf="scala-tool->default,optional(default)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" transitive="false" conf="ensime-internal->default(compile)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="compile->default(compile)"/>
-		<dependency org="org.scala-lang" name="scala-library" rev="2.11.7" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.8" transitive="false" conf="ensime-internal->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-compiler" rev="2.11.8" conf="scala-tool->default,optional(default)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" transitive="false" conf="ensime-internal->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-library" rev="2.11.8" conf="scala-tool->default,optional(default)"/>
 		<dependency org="org.eclipse.jetty" name="jetty-websocket" rev="8.1.16.v20140903" conf="phantom-js-jetty->default(compile)"/>
 		<dependency org="org.eclipse.jetty" name="jetty-server" rev="8.1.16.v20140903" conf="phantom-js-jetty->default(compile)"/>
-		<dependency org="org.scala-js" name="scalajs-compiler_2.11.7" rev="0.6.8" conf="plugin->default(compile)"/>
+		<dependency org="org.webjars" name="jquery" rev="2.1.4" conf="compile->default(compile)"/>
+		<dependency org="org.scala-js" name="scalajs-compiler_2.11.8" rev="0.6.8" conf="plugin->default(compile)"/>
 		<dependency org="org.scala-js" name="scalajs-library_2.11" rev="0.6.8" conf="compile->default(compile)"/>
-		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.7" transitive="false" conf="ensime-internal->default(compile)"/>
-		<dependency org="org.scala-lang" name="scalap" rev="2.11.7" transitive="false" conf="ensime-internal->default(compile)"/>
-		<dependency org="org.scala-js" name="scalajs-dom_sjs0.6_2.11" rev="0.9.0" conf="compile->default(compile)"/>
+		<dependency org="org.scala-lang" name="scala-reflect" rev="2.11.8" transitive="false" conf="ensime-internal->default(compile)"/>
+		<dependency org="org.scala-lang" name="scalap" rev="2.11.8" transitive="false" conf="ensime-internal->default(compile)"/>
+		<dependency org="be.doeraene" name="scalajs-jquery_sjs0.6_2.11" rev="0.9.0" conf="compile->default(compile)"/>
+		<dependency org="com.lihaoyi" name="utest_sjs0.6_2.11" rev="0.3.0" conf="test->default(compile)"/>
 	</dependencies>
 </ivy-module>

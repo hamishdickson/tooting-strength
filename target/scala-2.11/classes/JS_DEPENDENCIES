@@ -1,1 +1,1 @@
-{"origin":{"configuration":"compile","moduleName":"tooting-strength"}}
+{"libDeps":[{"resourceName":"2.1.4\/jquery.js"}],"requiresDOM":true,"origin":{"configuration":"compile","moduleName":"tooting-strength"}}
