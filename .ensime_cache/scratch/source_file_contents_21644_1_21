@@ -11,17 +11,47 @@ object TutorialApp extends JSApp {
   }
 
   def setupUI(): Unit = {
-    jQuery(div".container#click-me-button").click(addClickedMessage _)
+    val names = StevesData.nums.keySet
+
+    val nss = names.foldRight("")((a,b) => s"""<option value="${a}">${a}</option>""")
+
+    jQuery("#name").append(nass)
+
+    jQuery("#click-me-button").click(addClickedMessage _)
   }
 
   def addClickedMessage(): Unit = {
     val week = jQuery("#week").`val`().toString.toInt
     val name = jQuery("#name").`val`().toString.map(_.toLower)
 
-    jQuery("div.container").append("<p>Squat: " + StevesData.squat(name, week) + "</p>")
-    jQuery("div.container").append("<p>Front Squat: " + StevesData.front(name, week) + "</p>")
-    jQuery("div.container").append("<p>Deadlift: " + StevesData.deadlift(name, week) + "</p>")
-    jQuery("div.container").append("<p>Bench: " + StevesData.bench(name, week) + "</p>")
-    jQuery("div#main").append("<p>Strict: " + StevesData.strict(name, week) + "</p>")
+    val squat = StevesData.squat(name, week)
+    val front = StevesData.front(name, week)
+    val deadlift = StevesData.deadlift(name, week)
+    val bench = StevesData.bench(name, week)
+    val strict = StevesData.strict(name, week)
+
+    val trs = squat.foldRight("")((a,b) => s"""<tr>
+                                      <td>1</td>
+                                      <td>${a._1}</td>
+                                      <td>${a._2}<td>
+                                    </tr>""" + b)
+
+    val tableSquat = s"""<div class="col-md-6">
+                    <h4>Back squat</h4>
+                                <table class="table table-striped">
+                                  <thead>
+                                   <tr>
+                                      <th>set</th>
+                                      <th>%</th>
+                                      <th>weight</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    $trs
+                                  </tbody>
+                                </table>
+                              </div>"""
+
+    jQuery("#main").append(tableSquat)
   }
 }
