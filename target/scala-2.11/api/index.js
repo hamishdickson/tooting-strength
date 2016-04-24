@@ -1,0 +1,1 @@
+Index.PACKAGES = {"webapp" : [{"object" : "webapp\/App$.html", "name" : "webapp.App"}], "webapp.people" : [{"case class" : "webapp\/people\/Scores.html", "name" : "webapp.people.Scores"}, {"object" : "webapp\/people\/StevesData$.html", "name" : "webapp.people.StevesData"}, {"case class" : "webapp\/people\/Targets.html", "name" : "webapp.people.Targets"}]};

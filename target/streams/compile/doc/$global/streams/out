@@ -1,0 +1,13 @@
+[0m[[0minfo[0m] [0mMain Scala API documentation to /Users/hamishdickson/Programming/tooting-strength/target/scala-2.11/api...[0m
+[0m[[0mdebug[0m] [0mGetting compiler-interface from component compiler for Scala 2.11.8[0m
+[0m[[0mdebug[0m] [0mCalling Scaladoc with arguments:[0m
+[0m[[0mdebug[0m] [0m	-Xplugin:/Users/hamishdickson/.ivy2/cache/org.scala-js/scalajs-compiler_2.11.8/jars/scalajs-compiler_2.11.8-0.6.8.jar[0m
+[0m[[0mdebug[0m] [0m	-d[0m
+[0m[[0mdebug[0m] [0m	/Users/hamishdickson/Programming/tooting-strength/target/scala-2.11/api[0m
+[0m[[0mdebug[0m] [0m	-bootclasspath[0m
+[0m[[0mdebug[0m] [0m	/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/sunrsasign.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_25.jdk/Contents/Home/jre/classes:/Users/hamishdickson/.ivy2/cache/org.scala-lang/scala-library/jars/scala-library-2.11.8.jar[0m
+[0m[[0mdebug[0m] [0m	-classpath[0m
+[0m[[0mdebug[0m] [0m	/Users/hamishdickson/.ivy2/cache/org.webjars/jquery/jars/jquery-2.1.4.jar:/Users/hamishdickson/.ivy2/cache/org.scala-js/scalajs-library_2.11/jars/scalajs-library_2.11-0.6.8.jar:/Users/hamishdickson/.ivy2/cache/be.doeraene/scalajs-jquery_sjs0.6_2.11/jars/scalajs-jquery_sjs0.6_2.11-0.9.0.jar:/Users/hamishdickson/.ivy2/cache/org.scala-js/scalajs-dom_sjs0.6_2.11/jars/scalajs-dom_sjs0.6_2.11-0.9.0.jar[0m
+[0m[[0mdebug[0m] [0m	/Users/hamishdickson/Programming/tooting-strength/src/main/scala/tutorial/webapp/App.scala[0m
+[0m[[0mdebug[0m] [0m	/Users/hamishdickson/Programming/tooting-strength/src/main/scala/tutorial/webapp/People.scala[0m
+[0m[[0minfo[0m] [0mMain Scala API documentation successful.[0m

@@ -129,20 +129,8 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->org.scala-js#sbt-scalajs;0.6.8 [compile->default(compile)][0m
 [0m[[0minfo[0m] [0mResolving org.scala-js#sbt-scalajs;0.6.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-js#sbt-scalajs;0.6.8 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.scala-js#sbt-scalajs;0.6.8 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scala-js#sbt-scalajs;0.6.8 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for org.scala-js#sbt-scalajs;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for org.scala-js#sbt-scalajs;0.6.8[0m
-[0m[[0mdebug[0m] [0m		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/ivys/ivy.xml (0.6.8)[0m
-[0m[[0mdebug[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/ivys/ivy.xml ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/ivys/ivy.xml.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-js#sbt-scalajs;0.6.8!ivy.xml(ivy.original) (2253ms)[0m
-[0m[[0mdebug[0m] [0m	found org.scala-js#sbt-scalajs;0.6.8 in sbt-plugin-releases[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-js#sbt-scalajs;0.6.8[0m
+[0m[[0mdebug[0m] [0m	found org.scala-js#sbt-scalajs;0.6.8 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[0.6.8] org.scala-js#sbt-scalajs;0.6.8[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-tools_2.10;0.6.8 [compile->default(compile)][0m
@@ -150,31 +138,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.scala-js#scalajs-tools_2.10;0.6.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-js#scalajs-tools_2.10;0.6.8 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.scala-js#scalajs-tools_2.10;0.6.8 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scala-js#scalajs-tools_2.10;0.6.8 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-tools_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-tools_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for org.scala-js#scalajs-tools_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-tools_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-tools_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for org.scala-js#scalajs-tools_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried /Users/hamishdickson/.ivy2/local/org.scala-js/scalajs-tools_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-js#scalajs-tools_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	jcenter: found md file for org.scala-js#scalajs-tools_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		=> https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.pom (0.6.8)[0m
-[0m[[0mdebug[0m] [0mdownloading https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.pom ...[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-js#scalajs-tools_2.10;0.6.8!scalajs-tools_2.10.pom(pom.original) (1772ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-tools_2.10/0.6.8/jars/scalajs-tools_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-tools_2.10/0.6.8/jars/scalajs-tools_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-tools_2.10/0.6.8/jars/scalajs-tools_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-tools_2.10/0.6.8/jars/scalajs-tools_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/hamishdickson/.ivy2/local/org.scala-js/scalajs-tools_2.10/0.6.8/jars/scalajs-tools_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scala-js#scalajs-tools_2.10;0.6.8 in jcenter[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-js#scalajs-tools_2.10;0.6.8[0m
+[0m[[0mdebug[0m] [0m	found org.scala-js#scalajs-tools_2.10;0.6.8 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-tools_2.10;0.6.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-tools_2.10;0.6.8 [compile->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -197,31 +162,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.scala-js#scalajs-ir_2.10;0.6.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-js#scalajs-ir_2.10;0.6.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0minfo[0m] [0mResolving org.scala-js#scalajs-ir_2.10;0.6.8 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scala-js#scalajs-ir_2.10;0.6.8 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-ir_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-ir_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for org.scala-js#scalajs-ir_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-ir_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-ir_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for org.scala-js#scalajs-ir_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried /Users/hamishdickson/.ivy2/local/org.scala-js/scalajs-ir_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-js#scalajs-ir_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	jcenter: found md file for org.scala-js#scalajs-ir_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		=> https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.pom (0.6.8)[0m
-[0m[[0mdebug[0m] [0mdownloading https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.pom ...[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-js#scalajs-ir_2.10;0.6.8!scalajs-ir_2.10.pom(pom.original) (1230ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-ir_2.10/0.6.8/jars/scalajs-ir_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-ir_2.10/0.6.8/jars/scalajs-ir_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-ir_2.10/0.6.8/jars/scalajs-ir_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-ir_2.10/0.6.8/jars/scalajs-ir_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/hamishdickson/.ivy2/local/org.scala-js/scalajs-ir_2.10/0.6.8/jars/scalajs-ir_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scala-js#scalajs-ir_2.10;0.6.8 in jcenter[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-js#scalajs-ir_2.10;0.6.8[0m
+[0m[[0mdebug[0m] [0m	found org.scala-js#scalajs-ir_2.10;0.6.8 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m	[0.6.8] org.scala-js#scalajs-ir_2.10;0.6.8[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#scalajs-tools_2.10;0.6.8->org.scala-js#scalajs-ir_2.10;0.6.8 [compile->compile(*)][0m
@@ -362,31 +304,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.scala-js#scalajs-js-envs_2.10;0.6.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-js#scalajs-js-envs_2.10;0.6.8 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.scala-js#scalajs-js-envs_2.10;0.6.8 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scala-js#scalajs-js-envs_2.10;0.6.8 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-js-envs_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-js-envs_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for org.scala-js#scalajs-js-envs_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-js-envs_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-js-envs_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for org.scala-js#scalajs-js-envs_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried /Users/hamishdickson/.ivy2/local/org.scala-js/scalajs-js-envs_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-js#scalajs-js-envs_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	jcenter: found md file for org.scala-js#scalajs-js-envs_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		=> https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.pom (0.6.8)[0m
-[0m[[0mdebug[0m] [0mdownloading https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.pom ...[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-js#scalajs-js-envs_2.10;0.6.8!scalajs-js-envs_2.10.pom(pom.original) (1269ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-js-envs_2.10/0.6.8/jars/scalajs-js-envs_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-js-envs_2.10/0.6.8/jars/scalajs-js-envs_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-js-envs_2.10/0.6.8/jars/scalajs-js-envs_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-js-envs_2.10/0.6.8/jars/scalajs-js-envs_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/hamishdickson/.ivy2/local/org.scala-js/scalajs-js-envs_2.10/0.6.8/jars/scalajs-js-envs_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scala-js#scalajs-js-envs_2.10;0.6.8 in jcenter[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-js#scalajs-js-envs_2.10;0.6.8[0m
+[0m[[0mdebug[0m] [0m	found org.scala-js#scalajs-js-envs_2.10;0.6.8 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-js-envs_2.10;0.6.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-js-envs_2.10;0.6.8 [compile->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -453,31 +372,8 @@
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {provided=[default(compile)]} => dependency: org.scala-lang#scala-library;2.10.5 {provided=[default(compile)]}[0m
 [0m[[0minfo[0m] [0mResolving org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 ...[0m
 [0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 {compile=[default(compile)]}[0m
-[0m[[0minfo[0m] [0mResolving org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 ...[0m
-[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 {compile=[default(compile)]}[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: no ivy file found for org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried /Users/hamishdickson/.ivy2/local/org.scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/ivys/ivy.xml[0m
-[0m[[0mdebug[0m] [0m	local: no ivy file found for org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	jcenter: found md file for org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8[0m
-[0m[[0mdebug[0m] [0m		=> https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.pom (0.6.8)[0m
-[0m[[0mdebug[0m] [0mdownloading https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.pom ...[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.pom.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.pom[0m
-[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8!scalajs-sbt-test-adapter_2.10.pom(pom.original) (1230ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/jars/scalajs-sbt-test-adapter_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/org.scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/jars/scalajs-sbt-test-adapter_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/jars/scalajs-sbt-test-adapter_2.10.jar[0m
-[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/jars/scalajs-sbt-test-adapter_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried /Users/hamishdickson/.ivy2/local/org.scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/jars/scalajs-sbt-test-adapter_2.10.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.jar[0m
-[0m[[0mdebug[0m] [0m	found org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 in jcenter[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8[0m
+[0m[[0mdebug[0m] [0m	found org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 in sbt-chain[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 [compile->runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 [compile->compile][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
@@ -522,6 +418,59 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 {compile=[default(compile)]}[0m
+[0m[[0minfo[0m] [0mResolving com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain-delegate: Checking cache for: dependency: com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0mCLIENT ERROR: Not Found url=https://repo.typesafe.com/typesafe/ivy-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	typesafe-ivy-releases: no ivy file found for com.typesafe.sbt#sbt-native-packager;1.1.0-RC1[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: found md file for com.typesafe.sbt#sbt-native-packager;1.1.0-RC1[0m
+[0m[[0mdebug[0m] [0m		=> https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/ivys/ivy.xml (1.1.0-RC1)[0m
+[0m[[0mdebug[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/ivys/ivy.xml ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/ivys/ivy.xml.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/ivys/ivy.xml[0m
+[0m[[0mdebug[0m] [0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-native-packager;1.1.0-RC1!ivy.xml(ivy.original) (1339ms)[0m
+[0m[[0mdebug[0m] [0m	found com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 in sbt-plugin-releases[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.commons#commons-compress;1.4.1 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.commons#commons-compress;1.4.1 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.commons#commons-compress;1.4.1[0m
+[0m[[0mdebug[0m] [0m	found org.apache.commons#commons-compress;1.4.1 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.tukaani#xz;1.0 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.tukaani#xz;1.0 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.tukaani#xz;1.0[0m
+[0m[[0mdebug[0m] [0m	found org.tukaani#xz;1.0 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->default(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.ant#ant;1.9.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.ant#ant;1.9.6 {compile=[default(compile)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.ant#ant;1.9.6[0m
+[0m[[0mdebug[0m] [0m	found org.apache.ant#ant;1.9.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->master(compile)][0m
+[0m[[0minfo[0m] [0mResolving org.apache.ant#ant-launcher;1.9.6 ...[0m
+[0m[[0mdebug[0m] [0msbt-chain: Checking cache for: dependency: org.apache.ant#ant-launcher;1.9.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0msbt-chain: module revision found in cache: org.apache.ant#ant-launcher;1.9.6[0m
+[0m[[0mdebug[0m] [0m	found org.apache.ant#ant-launcher;1.9.6 in sbt-chain[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'runtime'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [runtime][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [compile][0m
@@ -827,6 +776,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [test][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [runtime][0m
@@ -1133,6 +1099,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->master][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'provided'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [provided->default(compile)][0m
@@ -2288,6 +2271,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [provided->default(compile)][0m
@@ -3222,6 +3222,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0mresolving dependencies for configuration 'test-internal'[0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [test-internal][0m
@@ -3530,6 +3547,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies org.scala-js#sbt-scalajs;0.6.8->org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8 [compile->master][0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
 [0m[[0mdebug[0m] [0mdependency descriptor has been mediated: dependency: org.scala-lang#scala-library;2.10.6 {compile=[compile(*), master(compile)], runtime=[runtime(*)]} => dependency: org.scala-lang#scala-library;2.10.5 {compile=[compile(*), master(compile)], runtime=[runtime(*)]}[0m
+[0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->com.typesafe.sbt#sbt-native-packager;1.1.0-RC1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.commons#commons-compress;1.4.1->org.tukaani#xz;1.0 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.commons#commons-compress;1.4.1 [compile->master][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->default(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->runtime][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->master(compile)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [compile->compile(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->runtime(*)][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies org.apache.ant#ant;1.9.6->org.apache.ant#ant-launcher;1.9.6 [runtime->compile][0m
+[0m[[0mdebug[0m] [0m== resolving dependencies com.typesafe.sbt#sbt-native-packager;1.1.0-RC1->org.apache.ant#ant;1.9.6 [compile->master][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [optional][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies for default#tooting-strength-build;0.1-SNAPSHOT [provided][0m
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->org.scala-lang#scala-library;2.10.5 [provided->default(compile)][0m
@@ -4231,42 +4265,23 @@
 [0m[[0mdebug[0m] [0m== resolving dependencies default#tooting-strength-build;0.1-SNAPSHOT->org.scala-lang#scalap;2.10.5 [ensime-internal->master][0m
 [0m[[0mdebug[0m] [0m	resolved ivy file produced in cache[0m
 [0m[[0mdebug[0m] [0m:: downloading artifacts ::[0m
-[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/jars/sbt-scalajs.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/jars/sbt-scalajs.jar ...[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/jars/sbt-scalajs.jar[0m
-[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/jars/sbt-scalajs.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/org.scala-js/sbt-scalajs/scala_2.10/sbt_0.13/0.6.8/jars/sbt-scalajs.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-js#sbt-scalajs;0.6.8!sbt-scalajs.jar (4045ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-js#sbt-scalajs;0.6.8!sbt-scalajs.jar[0m
+[0m[[0mdebug[0m] [0m		tried https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/jars/sbt-native-packager.jar[0m
+[0m[[0minfo[0m] [0mdownloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/jars/sbt-native-packager.jar ...[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/jars/sbt-native-packager.jar[0m
+[0m[[0mdebug[0m] [0m	sbt-plugin-releases: downloading https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/jars/sbt-native-packager.jar.sha1[0m
+[0m[[0mdebug[0m] [0msha1 OK for https://repo.scala-sbt.org/scalasbt/sbt-plugin-releases/com.typesafe.sbt/sbt-native-packager/scala_2.10/sbt_0.13/1.1.0-RC1/jars/sbt-native-packager.jar[0m
+[0m[[0minfo[0m] [0m	[SUCCESSFUL ] com.typesafe.sbt#sbt-native-packager;1.1.0-RC1!sbt-native-packager.jar (2772ms)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.ensime#ensime-sbt;0.4.0!ensime-sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scalap;2.10.6!scalap.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scalariform#scalariform_2.10;0.1.4!scalariform_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-compiler;2.10.5!scala-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-library;2.10.5!scala-library.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scala-reflect;2.10.5!scala-reflect.jar[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.jar ...[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.jar[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-js/scalajs-tools_2.10/0.6.8/scalajs-tools_2.10-0.6.8.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-js#scalajs-tools_2.10;0.6.8!scalajs-tools_2.10.jar (2455ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.jar ...[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.jar[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-js/scalajs-js-envs_2.10/0.6.8/scalajs-js-envs_2.10-0.6.8.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-js#scalajs-js-envs_2.10;0.6.8!scalajs-js-envs_2.10.jar (1562ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.jar ...[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.jar[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-js/scalajs-sbt-test-adapter_2.10/0.6.8/scalajs-sbt-test-adapter_2.10-0.6.8.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8!scalajs-sbt-test-adapter_2.10.jar (1490ms)[0m
-[0m[[0mdebug[0m] [0m		tried https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.jar[0m
-[0m[[0minfo[0m] [0mdownloading https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.jar ...[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.jar[0m
-[0m[[0mdebug[0m] [0m	jcenter: downloading https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.jar.sha1[0m
-[0m[[0mdebug[0m] [0msha1 OK for https://jcenter.bintray.com/org/scala-js/scalajs-ir_2.10/0.6.8/scalajs-ir_2.10-0.6.8.jar[0m
-[0m[[0minfo[0m] [0m	[SUCCESSFUL ] org.scala-js#scalajs-ir_2.10;0.6.8!scalajs-ir_2.10.jar (1685ms)[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-js#scalajs-tools_2.10;0.6.8!scalajs-tools_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-js#scalajs-js-envs_2.10;0.6.8!scalajs-js-envs_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-js#scalajs-sbt-test-adapter_2.10;0.6.8!scalajs-sbt-test-adapter_2.10.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-js#scalajs-ir_2.10;0.6.8!scalajs-ir_2.10.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.google.javascript#closure-compiler;v20130603!closure-compiler.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] com.googlecode.json-simple#json-simple;1.1.1!json-simple.jar(bundle)[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] args4j#args4j;2.0.16!args4j.jar[0m
@@ -4277,6 +4292,10 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] io.apigee#rhino;1.7R5pre4!rhino.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.webjars#envjs;1.2!envjs.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#test-interface;1.0!test-interface.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.commons#commons-compress;1.4.1!commons-compress.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.ant#ant;1.9.6!ant.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.tukaani#xz;1.0!xz.jar[0m
+[0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.apache.ant#ant-launcher;1.9.6!ant-launcher.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#sbt;0.13.9!sbt.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#main;0.13.9!main.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-sbt#compiler-interface;0.13.9!compiler-interface-src.jar[0m
@@ -4330,7 +4349,7 @@
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#jline;2.10.5!jline.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.fusesource.jansi#jansi;1.4!jansi.jar[0m
 [0m[[0mdebug[0m] [0m	[NOT REQUIRED] org.scala-lang#scalap;2.10.5!scalap.jar[0m
-[0m[[0mdebug[0m] [0m:: resolution report :: resolve 22505ms :: artifacts dl 11268ms[0m
+[0m[[0mdebug[0m] [0m:: resolution report :: resolve 3820ms :: artifacts dl 2799ms[0m
 [0m[[0mdebug[0m] [0m	report for default#tooting-strength-build;0.1-SNAPSHOT compile produced in /Users/hamishdickson/Programming/tooting-strength/project/target/resolution-cache/reports/default-tooting-strength-build-compile.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tooting-strength-build;0.1-SNAPSHOT runtime produced in /Users/hamishdickson/Programming/tooting-strength/project/target/resolution-cache/reports/default-tooting-strength-build-runtime.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tooting-strength-build;0.1-SNAPSHOT test produced in /Users/hamishdickson/Programming/tooting-strength/project/target/resolution-cache/reports/default-tooting-strength-build-test.xml[0m
@@ -4345,5 +4364,5 @@
 [0m[[0mdebug[0m] [0m	report for default#tooting-strength-build;0.1-SNAPSHOT pom produced in /Users/hamishdickson/Programming/tooting-strength/project/target/resolution-cache/reports/default-tooting-strength-build-pom.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tooting-strength-build;0.1-SNAPSHOT scala-tool produced in /Users/hamishdickson/Programming/tooting-strength/project/target/resolution-cache/reports/default-tooting-strength-build-scala-tool.xml[0m
 [0m[[0mdebug[0m] [0m	report for default#tooting-strength-build;0.1-SNAPSHOT ensime-internal produced in /Users/hamishdickson/Programming/tooting-strength/project/target/resolution-cache/reports/default-tooting-strength-build-ensime-internal.xml[0m
-[0m[[0mdebug[0m] [0m	resolve done (22505ms resolve - 11268ms download)[0m
+[0m[[0mdebug[0m] [0m	resolve done (3820ms resolve - 2799ms download)[0m
 [0m[[0minfo[0m] [0mDone updating.[0m
