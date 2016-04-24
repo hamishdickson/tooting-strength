@@ -1,69 +1,108 @@
-package tutorial.webapp
+package tutorial.webapp.people
 
-import scala.scalajs.js.JSApp
+case class Scores(squat: Double, front: Double, deadlift: Double, bench: Double, strict: Double)
 
-import org.scalajs.jquery.jQuery
-import tutorial.webapp.people._
+case class Targets(squat: List[Double], front: List[Double], deadlift: List[Double], bench: List[Double], strict: List[Double])
 
-object TutorialApp extends JSApp {
-  def main(): Unit = {
-    jQuery(setupUI _)
+object StevesData {
+  val percs = Map(1 -> List(0.5, 0.7, 0.8, 0.85, 0.9),
+    2 -> List(0.5, 0.55, 0.65, 0.7, 0.8),
+    3 -> List(0.55, 0.6, 0.7, 0.75, 0.85),
+    4 -> List(0.6, 0.75, 0.8, 0.85, 0.9),
+    5 -> List(0.65, 0.8, 0.85, 0.9, 0.95),
+    6 -> List(0.6, 0.7, 0.7),
+    7 -> List(0.7, 0.8, 0.85, 0.9, 0.95),
+    8 -> List(0.75, 0.85, 0.9, 0.95, 0.975),
+    9 -> List(0.8, 0.9, 0.975, 1.05, 1),
+    10 -> List(0.8, 0.9, 1, 107.5, 0.96),
+    11 -> List(0.92, 1, 1.05, 1.1, 1.05),
+    12 -> List(0.95, 1, 1.1, 1.16, 1.2)
+  )
+
+  val reps = Map(1 -> List(5, 5, 5, 5, 3),
+    2 -> List(8, 8, 5, 5, 3),
+    3 -> List(8, 8, 5, 5, 3),
+    4 -> List(8, 5, 5, 3, 3),
+    5 -> List(8, 5, 5, 3, 3),
+    6 -> List(10, 8, 8),
+    7 -> List(5, 5, 5, 3, 3),
+    8 -> List(5, 5, 5, 3, 3),
+    9 -> List(5, 5, 3, 2, 3),
+    10 -> List(5, 5, 3, 2, 5),
+    11 -> List(5, 4, 3, 2, 4),
+    12 -> List(5, 3, 2, 1, 1)
+  )
+
+  val nums = Map("hamish" -> Scores(124.6, 100.0, 170.5, 110.0, 70.0),
+    "tom" -> Scores(102, 84, 113.75, 69.3, 47),
+    "adam" -> Scores(88, 81, 105, 74.6, 54),
+    "dave" -> Scores(126.5, 104, 125, 93.5, 57),
+    "kirsty" -> Scores(70, 70, 104.5, 44, 38),
+    "rob" -> Scores(0, 69, 128.3, 74.7, 46),
+    "rebecca" -> Scores(0, 81, 81.6, 0, 38),
+    "linda" -> Scores(49.6, 46, 64.1, 43.7, 46),
+    "dani" -> Scores(119.6, 84, 115.6, 60.5, 42.6),
+    "rory" -> Scores(0, 93.4, 140, 0, 58),
+    "steve g" -> Scores(66, 0, 0, 64, 0),
+    "luke" -> Scores(0, 81, 116.6, 0, 54),
+    "dan f" -> Scores(81, 0, 100, 81, 0),
+    "stefan" -> Scores(81, 82.5, 96, 69.3, 46.6),
+    "simon mc" -> Scores(70, 77, 84, 64.1, 42.6),
+    "peter r" -> Scores(75.8, 0, 0, 68, 75),
+    "anya" -> Scores(77, 60.5, 88, 49.5, 38.5),
+    "clare l" -> Scores(80.3, 0, 0, 44, 0),
+    "gemma" -> Scores(75.8, 60, 82.5, 40.8, 35),
+    "stacey" -> Scores(58.3, 0, 0, 29.1, 0),
+    "rat" -> Scores(63.25, 53.3, 88, 48.1, 37.3),
+    "liv" -> Scores(63.25, 58.3, 80, 39.6, 38.5),
+    "michael t" -> Scores(100, 79.3, 100, 64.1, 37.3),
+    "steve d" -> Scores(110.8, 84, 110.8, 84, 58.3),
+    "james dow" -> Scores(105, 0, 133, 88, 0),
+    "gareth w" -> Scores(126.5, 0, 151.6, 93.3, 0),
+    "marie" -> Scores(0, 51, 0, 0, 27.5),
+    "sandra" -> Scores(90.4, 88, 110, 52, 43.75),
+    "ailish" -> Scores(52.5, 0, 58.3, 35, 0),
+    "jonathon" -> Scores(84.5, 0, 100, 78.75, 0),
+    "rachel j" -> Scores(48.1, 0, 0, 35, 0),
+    "simon l" -> Scores(73.5, 75.8, 90, 63, 45.3),
+    "cam" -> Scores(90.6, 0, 0, 78.75, 0),
+    "laura b" -> Scores(52.5, 0, 0, 35, 0),
+    "aaron" -> Scores(109.3, 93.5, 0, 99, 61.3),
+    "andrea" -> Scores(58.3, 52.5, 77, 0, 30),
+    "daniella" -> Scores(0,0,81.6,0,0),
+    "paula" -> Scores(0, 0, 71.5, 0, 0),
+    "josep" -> Scores(0, 0, 105, 0, 0),
+    "ben man" -> Scores(102, 75.8, 143, 84, 48),
+    "stacey" -> Scores(0, 0, 58.3, 0, 0),
+    "polly" -> Scores(0, 0, 58.3, 0, 0),
+    "hans" -> Scores(0, 106.6, 0, 0, 56.6),
+    "james pd" -> Scores(0, 75, 84, 0, 45.3),
+    "kathryn" -> Scores(0, 0, 82.5, 0, 0),
+    "sharon" -> Scores(0, 0, 82.5, 0, 0),
+    "christian" -> Scores(0, 0, 100, 0, 0),
+    "spohie" -> Scores(0, 43, 58.3, 0, 28.3),
+    "katie" -> Scores(0, 0, 58.3, 0, 0),
+    "dustyn" -> Scores(0, 90, 0, 0, 66)
+  )
+
+  def weights(name: String, week: Int)(f: Scores => Double): List[(Int, Double, Int)] = {
+    val ns: Scores = nums.getOrElse(name, Scores(0,0,0,0,0))
+    val ps: List[Double] = percs.getOrElse(week, List())
+    val rs: List[Int] = reps.getOrElse(week, List())
+
+    val prs = rs zip ps
+
+    val prns = ps.map{ case (r,p) => (r, p, (p * f(ns)).toInt) }
   }
 
-  def setupUI(): Unit = {
-    val names = StevesData.nums.keys.toSeq.sorted
+  def squat(name: String, week: Int) = weights(name, week)(_.squat)
 
-    val nss = names.foldRight("")((a,b) => s"""<option value="${a}">${a}</option>""" + b)
+  def front(name: String, week: Int) = weights(name, week)(_.front)
 
-    jQuery("#name").append(nss)
+  def deadlift(name: String, week: Int) = weights(name, week)(_.deadlift)
 
-    jQuery("#click-me-button").click(addClickedMessage _)
-  }
+  def bench(name: String, week: Int) = weights(name, week)(_.bench)
 
-  def addClickedMessage(): Unit = {
-    val week = jQuery("#week").`val`().toString.toInt
-    val name = jQuery("#name").`val`().toString.map(_.toLower)
-
-    val squat = ("Back squat", StevesData.squat(name, week))
-    val front = ("Front squat", StevesData.front(name, week))
-    val deadlift = ("Deadlift", StevesData.deadlift(name, week))
-    val bench = ("Bench press", StevesData.bench(name, week))
-    val strict = ("Strict press", StevesData.strict(name, week))
-
-    
-    jQuery("#main").append(doNiceHtmlTable(squat))
-    jQuery("#main").append(doNiceHtmlTable(front))
-    jQuery("#main").append(doNiceHtmlTable(deadlift))
-    jQuery("#main").append(doNiceHtmlTable(bench))
-    jQuery("#main").append(doNiceHtmlTable(strict))
-  }
-
-  def cleanOld = {
-    jQuery("#main").empt
-  }
-
-  def doNiceHtmlTable(w: (String, List[(Double, Int)])): String = {
-    val trs = w._2.foldRight("")((a, b) => s"""<tr>
-                                      <td>1</td>
-                                      <td>${a._1}</td>
-                                      <td>${a._2}<td>
-                                    </tr>""" + b )
-
-    s"""<div class="col-md-6">
-                    <h4>${w._1}</h4>
-                                <table class="table table-striped">
-                                  <thead>
-                                   <tr>
-                                      <th>set</th>
-                                      <th>%</th>
-                                      <th>weight</th>
-                                    </tr>
-                                  </thead>
-                                  <tbody>
-                                    $trs
-                                  </tbody>
-                                </table>
-                              </div>"""
-
-  }
+  def strict(name: String, week: Int) = weights(name, week)(_.strict)
 }
+

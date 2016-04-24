@@ -43,11 +43,11 @@ object TutorialApp extends JSApp {
     jQuery("#main").empty()
   }
 
-  def doNiceHtmlTable(w: (String, List[(Double, Int)])): String = {
+  def doNiceHtmlTable(w: (String, List[(Int, Double, Int)])): String = {
     val trs = w._2.foldRight("")((a, b) => s"""<tr>
-                                      <td>1</td>
-                                      <td>${a._1}</td>
-                                      <td>${a._2}<td>
+                                      <td>$</td>
+                                      <td>${a._2}</td>
+                                      <td>${a._3}<td>
                                     </tr>""" + b )
 
     s"""<div class="col-md-6">
@@ -56,7 +56,7 @@ object TutorialApp extends JSApp {
                                   <thead>
                                    <tr>
                                       <th>set</th>
-                                      <th>ra</th>
+                                      <th>ratio</th>
                                       <th>weight</th>
                                     </tr>
                                   </thead>

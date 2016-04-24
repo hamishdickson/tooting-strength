@@ -1084,6 +1084,25 @@ function $s_s_Product2$class__productElement__s_Product2__I__O($$this, n) {
     }
   }
 }
+function $s_s_Product3$class__productElement__s_Product3__I__O($$this, n) {
+  switch (n) {
+    case 0: {
+      return $$this.$$und1$1;
+      break
+    }
+    case 1: {
+      return $$this.$$und2$1;
+      break
+    }
+    case 2: {
+      return $$this.$$und3$1;
+      break
+    }
+    default: {
+      throw new $c_jl_IndexOutOfBoundsException().init___T(("" + n))
+    }
+  }
+}
 function $s_s_Proxy$class__toString__s_Proxy__T($$this) {
   return ("" + $$this.self$1)
 }
@@ -1262,6 +1281,15 @@ function $s_sc_IndexedSeqOptimized$class__foreach__sc_IndexedSeqOptimized__F1__V
 }
 function $s_sc_IndexedSeqOptimized$class__isEmpty__sc_IndexedSeqOptimized__Z($$this) {
   return ($$this.length__I() === 0)
+}
+function $s_sc_IterableLike$class__zip__sc_IterableLike__sc_GenIterable__scg_CanBuildFrom__O($$this, that, bf) {
+  var b = bf.apply__O__scm_Builder($$this.repr__O());
+  var these = $$this.iterator__sc_Iterator();
+  var those = that.iterator__sc_Iterator();
+  while ((these.hasNext__Z() && those.hasNext__Z())) {
+    b.$$plus$eq__O__scm_Builder(new $c_T2().init___O__O(these.next__O(), those.next__O()))
+  };
+  return b.result__O()
 }
 function $s_sc_IterableLike$class__copyToArray__sc_IterableLike__O__I__I__V($$this, xs, start, len) {
   var i = start;
@@ -2114,90 +2142,21 @@ function $m_Lorg_scalajs_jquery_package$() {
   return $n_Lorg_scalajs_jquery_package$
 }
 /** @constructor */
-function $c_Ltutorial_webapp_people_StevesData$() {
+function $c_Lwebapp_people_StevesData$() {
   $c_O.call(this);
   this.percs$1 = null;
+  this.reps$1 = null;
   this.nums$1 = null
 }
-$c_Ltutorial_webapp_people_StevesData$.prototype = new $h_O();
-$c_Ltutorial_webapp_people_StevesData$.prototype.constructor = $c_Ltutorial_webapp_people_StevesData$;
+$c_Lwebapp_people_StevesData$.prototype = new $h_O();
+$c_Lwebapp_people_StevesData$.prototype.constructor = $c_Lwebapp_people_StevesData$;
 /** @constructor */
-function $h_Ltutorial_webapp_people_StevesData$() {
+function $h_Lwebapp_people_StevesData$() {
   /*<skip>*/
 }
-$h_Ltutorial_webapp_people_StevesData$.prototype = $c_Ltutorial_webapp_people_StevesData$.prototype;
-$c_Ltutorial_webapp_people_StevesData$.prototype.weights__T__I__F1__sci_List = (function(name, week, f) {
-  var this$1 = this.nums$1;
-  var x1 = this$1.get__O__s_Option(name);
-  if ($is_s_Some(x1)) {
-    var x2 = $as_s_Some(x1);
-    var jsx$1 = x2.x$2
-  } else {
-    var x = $m_s_None$();
-    if ((x === x1)) {
-      var jsx$1 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 0.0, 0.0, 0.0)
-    } else {
-      var jsx$1;
-      throw new $c_s_MatchError().init___O(x1)
-    }
-  };
-  var ns = $as_Ltutorial_webapp_people_Scores(jsx$1);
-  var this$2 = this.percs$1;
-  var x1$1 = this$2.get__O__s_Option(week);
-  if ($is_s_Some(x1$1)) {
-    var x2$1 = $as_s_Some(x1$1);
-    var jsx$2 = x2$1.x$2
-  } else {
-    var x$1 = $m_s_None$();
-    if ((x$1 === x1$1)) {
-      var jsx$2 = $m_sci_Nil$()
-    } else {
-      var jsx$2;
-      throw new $c_s_MatchError().init___O(x1$1)
-    }
-  };
-  var ps = $as_sci_List(jsx$2);
-  var f$2 = (function(f$1, ns$1) {
-    return (function(i$2) {
-      var i = $uD(i$2);
-      return new $c_s_Tuple2$mcDI$sp().init___D__I(i, $doubleToInt((i * $uD(f$1.apply__O__O(ns$1)))))
-    })
-  })(f, ns);
-  var this$3 = $m_sci_List$();
-  var bf = this$3.ReusableCBFInstance$2;
-  if ((bf === $m_sci_List$().ReusableCBFInstance$2)) {
-    if ((ps === $m_sci_Nil$())) {
-      var jsx$3 = $m_sci_Nil$()
-    } else {
-      var arg1 = ps.head__O();
-      var h = new $c_sci_$colon$colon().init___O__sci_List(f$2(arg1), $m_sci_Nil$());
-      var t = h;
-      var rest = ps.tail__sci_List();
-      while ((rest !== $m_sci_Nil$())) {
-        var arg1$1 = rest.head__O();
-        var nx = new $c_sci_$colon$colon().init___O__sci_List(f$2(arg1$1), $m_sci_Nil$());
-        t.tl$5 = nx;
-        t = nx;
-        var this$4 = rest;
-        rest = this$4.tail__sci_List()
-      };
-      var jsx$3 = h
-    }
-  } else {
-    var b = $s_sc_TraversableLike$class__builder$1__p0__sc_TraversableLike__scg_CanBuildFrom__scm_Builder(ps, bf);
-    var these = ps;
-    while ((!these.isEmpty__Z())) {
-      var arg1$2 = these.head__O();
-      b.$$plus$eq__O__scm_Builder(f$2(arg1$2));
-      var this$5 = these;
-      these = this$5.tail__sci_List()
-    };
-    var jsx$3 = b.result__O()
-  };
-  return $as_sci_List(jsx$3)
-});
-$c_Ltutorial_webapp_people_StevesData$.prototype.init___ = (function() {
-  $n_Ltutorial_webapp_people_StevesData$ = this;
+$h_Lwebapp_people_StevesData$.prototype = $c_Lwebapp_people_StevesData$.prototype;
+$c_Lwebapp_people_StevesData$.prototype.init___ = (function() {
+  $n_Lwebapp_people_StevesData$ = this;
   $m_sci_List$();
   var xs = new $c_sjs_js_WrappedArray().init___sjs_js_Array([0.5, 0.7, 0.8, 0.85, 0.9]);
   var this$3 = $m_sci_List$();
@@ -2229,7 +2188,7 @@ $c_Ltutorial_webapp_people_StevesData$.prototype.init___ = (function() {
   var y$4 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$4, cbf$4));
   var jsx$7 = new $c_T2().init___O__O(5, y$4);
   $m_sci_List$();
-  var xs$5 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([0.6, 0.7]);
+  var xs$5 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([0.6, 0.7, 0.7]);
   var this$23 = $m_sci_List$();
   var cbf$5 = this$23.ReusableCBFInstance$2;
   var y$5 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$5, cbf$5));
@@ -2280,161 +2239,337 @@ $c_Ltutorial_webapp_people_StevesData$.prototype.init___ = (function() {
     i = ((1 + i) | 0)
   };
   this.percs$1 = $as_sci_Map(this$50.elems$1);
-  var y$12 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(124.6, 100.0, 170.5, 110.0, 70.0);
-  var jsx$60 = new $c_T2().init___O__O("hamish", y$12);
-  var y$13 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(102.0, 84.0, 113.75, 69.3, 47.0);
-  var jsx$59 = new $c_T2().init___O__O("tom", y$13);
-  var y$14 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(88.0, 81.0, 105.0, 74.6, 54.0);
-  var jsx$58 = new $c_T2().init___O__O("adam", y$14);
-  var y$15 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(126.5, 104.0, 125.0, 93.5, 57.0);
-  var jsx$57 = new $c_T2().init___O__O("dave", y$15);
-  var y$16 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(70.0, 70.0, 104.5, 44.0, 38.0);
-  var jsx$56 = new $c_T2().init___O__O("kirsty", y$16);
-  var y$17 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 69.0, 128.3, 74.7, 46.0);
-  var jsx$55 = new $c_T2().init___O__O("rob", y$17);
-  var y$18 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 81.0, 81.6, 0.0, 38.0);
-  var jsx$54 = new $c_T2().init___O__O("rebecca", y$18);
-  var y$19 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(49.6, 46.0, 64.1, 43.7, 46.0);
-  var jsx$53 = new $c_T2().init___O__O("linda", y$19);
-  var y$20 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(119.6, 84.0, 115.6, 60.5, 42.6);
-  var jsx$52 = new $c_T2().init___O__O("dani", y$20);
-  var y$21 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 93.4, 140.0, 0.0, 58.0);
-  var jsx$51 = new $c_T2().init___O__O("rory", y$21);
-  var y$22 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(66.0, 0.0, 0.0, 64.0, 0.0);
-  var jsx$50 = new $c_T2().init___O__O("steve g", y$22);
-  var y$23 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 81.0, 116.6, 0.0, 54.0);
-  var jsx$49 = new $c_T2().init___O__O("luke", y$23);
-  var y$24 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(81.0, 0.0, 100.0, 81.0, 0.0);
-  var jsx$48 = new $c_T2().init___O__O("dan f", y$24);
-  var y$25 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(81.0, 82.5, 96.0, 69.3, 46.6);
-  var jsx$47 = new $c_T2().init___O__O("stefan", y$25);
-  var y$26 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(70.0, 77.0, 84.0, 64.1, 42.6);
-  var jsx$46 = new $c_T2().init___O__O("simon mc", y$26);
-  var y$27 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(75.8, 0.0, 0.0, 68.0, 75.0);
-  var jsx$45 = new $c_T2().init___O__O("peter r", y$27);
-  var y$28 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(77.0, 60.5, 88.0, 49.5, 38.5);
-  var jsx$44 = new $c_T2().init___O__O("anya", y$28);
-  var y$29 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(80.3, 0.0, 0.0, 44.0, 0.0);
-  var jsx$43 = new $c_T2().init___O__O("clare l", y$29);
-  var y$30 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(75.8, 60.0, 82.5, 40.8, 35.0);
-  var jsx$42 = new $c_T2().init___O__O("gemma", y$30);
-  var y$31 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(58.3, 0.0, 0.0, 29.1, 0.0);
-  var jsx$41 = new $c_T2().init___O__O("stacey", y$31);
-  var y$32 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(63.25, 53.3, 88.0, 48.1, 37.3);
-  var jsx$40 = new $c_T2().init___O__O("rat", y$32);
-  var y$33 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(63.25, 58.3, 80.0, 39.6, 38.5);
-  var jsx$39 = new $c_T2().init___O__O("liv", y$33);
-  var y$34 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(100.0, 79.3, 100.0, 64.1, 37.3);
-  var jsx$38 = new $c_T2().init___O__O("michael t", y$34);
-  var y$35 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(110.8, 84.0, 110.8, 84.0, 58.3);
-  var jsx$37 = new $c_T2().init___O__O("steve d", y$35);
-  var y$36 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(105.0, 0.0, 133.0, 88.0, 0.0);
-  var jsx$36 = new $c_T2().init___O__O("james dow", y$36);
-  var y$37 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(126.5, 0.0, 151.6, 93.3, 0.0);
-  var jsx$35 = new $c_T2().init___O__O("gareth w", y$37);
-  var y$38 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 51.0, 0.0, 0.0, 27.5);
-  var jsx$34 = new $c_T2().init___O__O("marie", y$38);
-  var y$39 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(90.4, 88.0, 110.0, 52.0, 43.75);
-  var jsx$33 = new $c_T2().init___O__O("sandra", y$39);
-  var y$40 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(52.5, 0.0, 58.3, 35.0, 0.0);
-  var jsx$32 = new $c_T2().init___O__O("ailish", y$40);
-  var y$41 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(84.5, 0.0, 100.0, 78.75, 0.0);
-  var jsx$31 = new $c_T2().init___O__O("jonathon", y$41);
-  var y$42 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(48.1, 0.0, 0.0, 35.0, 0.0);
-  var jsx$30 = new $c_T2().init___O__O("rachel j", y$42);
-  var y$43 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(73.5, 75.8, 90.0, 63.0, 45.3);
-  var jsx$29 = new $c_T2().init___O__O("simon l", y$43);
-  var y$44 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(90.6, 0.0, 0.0, 78.75, 0.0);
-  var jsx$28 = new $c_T2().init___O__O("cam", y$44);
-  var y$45 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(52.5, 0.0, 0.0, 35.0, 0.0);
-  var jsx$27 = new $c_T2().init___O__O("laura b", y$45);
-  var y$46 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(109.3, 93.5, 0.0, 99.0, 61.3);
-  var jsx$26 = new $c_T2().init___O__O("aaron", y$46);
-  var y$47 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(58.3, 52.5, 77.0, 0.0, 30.0);
-  var jsx$25 = new $c_T2().init___O__O("andrea", y$47);
-  var y$48 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 81.6, 0.0, 0.0);
-  var jsx$24 = new $c_T2().init___O__O("daniella", y$48);
-  var y$49 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 71.5, 0.0, 0.0);
-  var jsx$23 = new $c_T2().init___O__O("paula", y$49);
-  var y$50 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 105.0, 0.0, 0.0);
-  var jsx$22 = new $c_T2().init___O__O("josep", y$50);
-  var y$51 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(102.0, 75.8, 143.0, 84.0, 48.0);
-  var jsx$21 = new $c_T2().init___O__O("ben man", y$51);
-  var y$52 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 58.3, 0.0, 0.0);
-  var jsx$20 = new $c_T2().init___O__O("stacey", y$52);
-  var y$53 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 58.3, 0.0, 0.0);
-  var jsx$19 = new $c_T2().init___O__O("polly", y$53);
-  var y$54 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 106.6, 0.0, 0.0, 56.6);
-  var jsx$18 = new $c_T2().init___O__O("hans", y$54);
-  var y$55 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 75.0, 84.0, 0.0, 45.3);
-  var jsx$17 = new $c_T2().init___O__O("james pd", y$55);
-  var y$56 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 82.5, 0.0, 0.0);
-  var jsx$16 = new $c_T2().init___O__O("kathryn", y$56);
-  var y$57 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 82.5, 0.0, 0.0);
-  var jsx$15 = new $c_T2().init___O__O("sharon", y$57);
-  var y$58 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 100.0, 0.0, 0.0);
-  var jsx$14 = new $c_T2().init___O__O("christian", y$58);
-  var y$59 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 43.0, 58.3, 0.0, 28.3);
-  var jsx$13 = new $c_T2().init___O__O("spohie", y$59);
-  var y$60 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 58.3, 0.0, 0.0);
-  var jsx$12 = new $c_T2().init___O__O("katie", y$60);
-  var y$61 = new $c_Ltutorial_webapp_people_Scores().init___D__D__D__D__D(0.0, 90.0, 0.0, 0.0, 66.0);
-  var array$1 = [jsx$60, jsx$59, jsx$58, jsx$57, jsx$56, jsx$55, jsx$54, jsx$53, jsx$52, jsx$51, jsx$50, jsx$49, jsx$48, jsx$47, jsx$46, jsx$45, jsx$44, jsx$43, jsx$42, jsx$41, jsx$40, jsx$39, jsx$38, jsx$37, jsx$36, jsx$35, jsx$34, jsx$33, jsx$32, jsx$31, jsx$30, jsx$29, jsx$28, jsx$27, jsx$26, jsx$25, jsx$24, jsx$23, jsx$22, jsx$21, jsx$20, jsx$19, jsx$18, jsx$17, jsx$16, jsx$15, jsx$14, jsx$13, jsx$12, new $c_T2().init___O__O("dustyn", y$61)];
-  var this$152 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
+  $m_sci_List$();
+  var xs$12 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([5, 5, 5, 5, 3]);
+  var this$53 = $m_sci_List$();
+  var cbf$12 = this$53.ReusableCBFInstance$2;
+  var y$12 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$12, cbf$12));
+  var jsx$22 = new $c_T2().init___O__O(1, y$12);
+  $m_sci_List$();
+  var xs$13 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([8, 8, 5, 5, 3]);
+  var this$57 = $m_sci_List$();
+  var cbf$13 = this$57.ReusableCBFInstance$2;
+  var y$13 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$13, cbf$13));
+  var jsx$21 = new $c_T2().init___O__O(2, y$13);
+  $m_sci_List$();
+  var xs$14 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([8, 8, 5, 5, 3]);
+  var this$61 = $m_sci_List$();
+  var cbf$14 = this$61.ReusableCBFInstance$2;
+  var y$14 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$14, cbf$14));
+  var jsx$20 = new $c_T2().init___O__O(3, y$14);
+  $m_sci_List$();
+  var xs$15 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([8, 5, 5, 3, 3]);
+  var this$65 = $m_sci_List$();
+  var cbf$15 = this$65.ReusableCBFInstance$2;
+  var y$15 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$15, cbf$15));
+  var jsx$19 = new $c_T2().init___O__O(4, y$15);
+  $m_sci_List$();
+  var xs$16 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([8, 5, 5, 3, 3]);
+  var this$69 = $m_sci_List$();
+  var cbf$16 = this$69.ReusableCBFInstance$2;
+  var y$16 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$16, cbf$16));
+  var jsx$18 = new $c_T2().init___O__O(5, y$16);
+  $m_sci_List$();
+  var xs$17 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([10, 8, 8]);
+  var this$73 = $m_sci_List$();
+  var cbf$17 = this$73.ReusableCBFInstance$2;
+  var y$17 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$17, cbf$17));
+  var jsx$17 = new $c_T2().init___O__O(6, y$17);
+  $m_sci_List$();
+  var xs$18 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([5, 5, 5, 3, 3]);
+  var this$77 = $m_sci_List$();
+  var cbf$18 = this$77.ReusableCBFInstance$2;
+  var y$18 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$18, cbf$18));
+  var jsx$16 = new $c_T2().init___O__O(7, y$18);
+  $m_sci_List$();
+  var xs$19 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([5, 5, 5, 3, 3]);
+  var this$81 = $m_sci_List$();
+  var cbf$19 = this$81.ReusableCBFInstance$2;
+  var y$19 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$19, cbf$19));
+  var jsx$15 = new $c_T2().init___O__O(8, y$19);
+  $m_sci_List$();
+  var xs$20 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([5, 5, 3, 2, 3]);
+  var this$85 = $m_sci_List$();
+  var cbf$20 = this$85.ReusableCBFInstance$2;
+  var y$20 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$20, cbf$20));
+  var jsx$14 = new $c_T2().init___O__O(9, y$20);
+  $m_sci_List$();
+  var xs$21 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([5, 5, 3, 2, 5]);
+  var this$89 = $m_sci_List$();
+  var cbf$21 = this$89.ReusableCBFInstance$2;
+  var y$21 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$21, cbf$21));
+  var jsx$13 = new $c_T2().init___O__O(10, y$21);
+  $m_sci_List$();
+  var xs$22 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([5, 4, 3, 2, 4]);
+  var this$93 = $m_sci_List$();
+  var cbf$22 = this$93.ReusableCBFInstance$2;
+  var y$22 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$22, cbf$22));
+  var jsx$12 = new $c_T2().init___O__O(11, y$22);
+  $m_sci_List$();
+  var xs$23 = new $c_sjs_js_WrappedArray().init___sjs_js_Array([5, 3, 2, 1, 1]);
+  var this$97 = $m_sci_List$();
+  var cbf$23 = this$97.ReusableCBFInstance$2;
+  var y$23 = $as_sci_List($s_sc_TraversableLike$class__to__sc_TraversableLike__scg_CanBuildFrom__O(xs$23, cbf$23));
+  var array$1 = [jsx$22, jsx$21, jsx$20, jsx$19, jsx$18, jsx$17, jsx$16, jsx$15, jsx$14, jsx$13, jsx$12, new $c_T2().init___O__O(12, y$23)];
+  var this$100 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
   var i$1 = 0;
   var len$1 = $uI(array$1.length);
   while ((i$1 < len$1)) {
     var index$1 = i$1;
     var arg1$1 = array$1[index$1];
-    this$152.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1$1));
+    this$100.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1$1));
     i$1 = ((1 + i$1) | 0)
   };
-  this.nums$1 = $as_sci_Map(this$152.elems$1);
+  this.reps$1 = $as_sci_Map(this$100.elems$1);
+  var y$24 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(124.6, 100.0, 170.5, 110.0, 70.0);
+  var jsx$71 = new $c_T2().init___O__O("hamish", y$24);
+  var y$25 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(102.0, 84.0, 113.75, 69.3, 47.0);
+  var jsx$70 = new $c_T2().init___O__O("tom", y$25);
+  var y$26 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(88.0, 81.0, 105.0, 74.6, 54.0);
+  var jsx$69 = new $c_T2().init___O__O("adam", y$26);
+  var y$27 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(126.5, 104.0, 125.0, 93.5, 57.0);
+  var jsx$68 = new $c_T2().init___O__O("dave", y$27);
+  var y$28 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(70.0, 70.0, 104.5, 44.0, 38.0);
+  var jsx$67 = new $c_T2().init___O__O("kirsty", y$28);
+  var y$29 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 69.0, 128.3, 74.7, 46.0);
+  var jsx$66 = new $c_T2().init___O__O("rob", y$29);
+  var y$30 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 81.0, 81.6, 0.0, 38.0);
+  var jsx$65 = new $c_T2().init___O__O("rebecca", y$30);
+  var y$31 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(49.6, 46.0, 64.1, 43.7, 46.0);
+  var jsx$64 = new $c_T2().init___O__O("linda", y$31);
+  var y$32 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(119.6, 84.0, 115.6, 60.5, 42.6);
+  var jsx$63 = new $c_T2().init___O__O("dani", y$32);
+  var y$33 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 93.4, 140.0, 0.0, 58.0);
+  var jsx$62 = new $c_T2().init___O__O("rory", y$33);
+  var y$34 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(66.0, 0.0, 0.0, 64.0, 0.0);
+  var jsx$61 = new $c_T2().init___O__O("steve g", y$34);
+  var y$35 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 81.0, 116.6, 0.0, 54.0);
+  var jsx$60 = new $c_T2().init___O__O("luke", y$35);
+  var y$36 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(81.0, 0.0, 100.0, 81.0, 0.0);
+  var jsx$59 = new $c_T2().init___O__O("dan f", y$36);
+  var y$37 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(81.0, 82.5, 96.0, 69.3, 46.6);
+  var jsx$58 = new $c_T2().init___O__O("stefan", y$37);
+  var y$38 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(70.0, 77.0, 84.0, 64.1, 42.6);
+  var jsx$57 = new $c_T2().init___O__O("simon mc", y$38);
+  var y$39 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(75.8, 0.0, 0.0, 68.0, 75.0);
+  var jsx$56 = new $c_T2().init___O__O("peter r", y$39);
+  var y$40 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(77.0, 60.5, 88.0, 49.5, 38.5);
+  var jsx$55 = new $c_T2().init___O__O("anya", y$40);
+  var y$41 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(80.3, 0.0, 0.0, 44.0, 0.0);
+  var jsx$54 = new $c_T2().init___O__O("clare l", y$41);
+  var y$42 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(75.8, 60.0, 82.5, 40.8, 35.0);
+  var jsx$53 = new $c_T2().init___O__O("gemma", y$42);
+  var y$43 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(58.3, 0.0, 0.0, 29.1, 0.0);
+  var jsx$52 = new $c_T2().init___O__O("stacey", y$43);
+  var y$44 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(63.25, 53.3, 88.0, 48.1, 37.3);
+  var jsx$51 = new $c_T2().init___O__O("rat", y$44);
+  var y$45 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(63.25, 58.3, 80.0, 39.6, 38.5);
+  var jsx$50 = new $c_T2().init___O__O("liv", y$45);
+  var y$46 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(100.0, 79.3, 100.0, 64.1, 37.3);
+  var jsx$49 = new $c_T2().init___O__O("michael t", y$46);
+  var y$47 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(110.8, 84.0, 110.8, 84.0, 58.3);
+  var jsx$48 = new $c_T2().init___O__O("steve d", y$47);
+  var y$48 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(105.0, 0.0, 133.0, 88.0, 0.0);
+  var jsx$47 = new $c_T2().init___O__O("james dow", y$48);
+  var y$49 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(126.5, 0.0, 151.6, 93.3, 0.0);
+  var jsx$46 = new $c_T2().init___O__O("gareth w", y$49);
+  var y$50 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 51.0, 0.0, 0.0, 27.5);
+  var jsx$45 = new $c_T2().init___O__O("marie", y$50);
+  var y$51 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(90.4, 88.0, 110.0, 52.0, 43.75);
+  var jsx$44 = new $c_T2().init___O__O("sandra", y$51);
+  var y$52 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(52.5, 0.0, 58.3, 35.0, 0.0);
+  var jsx$43 = new $c_T2().init___O__O("ailish", y$52);
+  var y$53 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(84.5, 0.0, 100.0, 78.75, 0.0);
+  var jsx$42 = new $c_T2().init___O__O("jonathon", y$53);
+  var y$54 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(48.1, 0.0, 0.0, 35.0, 0.0);
+  var jsx$41 = new $c_T2().init___O__O("rachel j", y$54);
+  var y$55 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(73.5, 75.8, 90.0, 63.0, 45.3);
+  var jsx$40 = new $c_T2().init___O__O("simon l", y$55);
+  var y$56 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(90.6, 0.0, 0.0, 78.75, 0.0);
+  var jsx$39 = new $c_T2().init___O__O("cam", y$56);
+  var y$57 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(52.5, 0.0, 0.0, 35.0, 0.0);
+  var jsx$38 = new $c_T2().init___O__O("laura b", y$57);
+  var y$58 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(109.3, 93.5, 0.0, 99.0, 61.3);
+  var jsx$37 = new $c_T2().init___O__O("aaron", y$58);
+  var y$59 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(58.3, 52.5, 77.0, 0.0, 30.0);
+  var jsx$36 = new $c_T2().init___O__O("andrea", y$59);
+  var y$60 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 81.6, 0.0, 0.0);
+  var jsx$35 = new $c_T2().init___O__O("daniella", y$60);
+  var y$61 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 71.5, 0.0, 0.0);
+  var jsx$34 = new $c_T2().init___O__O("paula", y$61);
+  var y$62 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 105.0, 0.0, 0.0);
+  var jsx$33 = new $c_T2().init___O__O("josep", y$62);
+  var y$63 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(102.0, 75.8, 143.0, 84.0, 48.0);
+  var jsx$32 = new $c_T2().init___O__O("ben man", y$63);
+  var y$64 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 58.3, 0.0, 0.0);
+  var jsx$31 = new $c_T2().init___O__O("stacey", y$64);
+  var y$65 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 58.3, 0.0, 0.0);
+  var jsx$30 = new $c_T2().init___O__O("polly", y$65);
+  var y$66 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 106.6, 0.0, 0.0, 56.6);
+  var jsx$29 = new $c_T2().init___O__O("hans", y$66);
+  var y$67 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 75.0, 84.0, 0.0, 45.3);
+  var jsx$28 = new $c_T2().init___O__O("james pd", y$67);
+  var y$68 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 82.5, 0.0, 0.0);
+  var jsx$27 = new $c_T2().init___O__O("kathryn", y$68);
+  var y$69 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 82.5, 0.0, 0.0);
+  var jsx$26 = new $c_T2().init___O__O("sharon", y$69);
+  var y$70 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 100.0, 0.0, 0.0);
+  var jsx$25 = new $c_T2().init___O__O("christian", y$70);
+  var y$71 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 43.0, 58.3, 0.0, 28.3);
+  var jsx$24 = new $c_T2().init___O__O("spohie", y$71);
+  var y$72 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 58.3, 0.0, 0.0);
+  var jsx$23 = new $c_T2().init___O__O("katie", y$72);
+  var y$73 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 90.0, 0.0, 0.0, 66.0);
+  var array$2 = [jsx$71, jsx$70, jsx$69, jsx$68, jsx$67, jsx$66, jsx$65, jsx$64, jsx$63, jsx$62, jsx$61, jsx$60, jsx$59, jsx$58, jsx$57, jsx$56, jsx$55, jsx$54, jsx$53, jsx$52, jsx$51, jsx$50, jsx$49, jsx$48, jsx$47, jsx$46, jsx$45, jsx$44, jsx$43, jsx$42, jsx$41, jsx$40, jsx$39, jsx$38, jsx$37, jsx$36, jsx$35, jsx$34, jsx$33, jsx$32, jsx$31, jsx$30, jsx$29, jsx$28, jsx$27, jsx$26, jsx$25, jsx$24, jsx$23, new $c_T2().init___O__O("dustyn", y$73)];
+  var this$202 = new $c_scm_MapBuilder().init___sc_GenMap($m_sci_Map$EmptyMap$());
+  var i$2 = 0;
+  var len$2 = $uI(array$2.length);
+  while ((i$2 < len$2)) {
+    var index$2 = i$2;
+    var arg1$2 = array$2[index$2];
+    this$202.$$plus$eq__T2__scm_MapBuilder($as_T2(arg1$2));
+    i$2 = ((1 + i$2) | 0)
+  };
+  this.nums$1 = $as_sci_Map(this$202.elems$1);
   return this
 });
-$c_Ltutorial_webapp_people_StevesData$.prototype.strict__T__I__sci_List = (function(name, week) {
+$c_Lwebapp_people_StevesData$.prototype.weights__T__I__F1__sci_List = (function(name, week, f) {
+  var this$1 = this.nums$1;
+  var x1 = this$1.get__O__s_Option(name);
+  if ($is_s_Some(x1)) {
+    var x2 = $as_s_Some(x1);
+    var jsx$1 = x2.x$2
+  } else {
+    var x = $m_s_None$();
+    if ((x === x1)) {
+      var jsx$1 = new $c_Lwebapp_people_Scores().init___D__D__D__D__D(0.0, 0.0, 0.0, 0.0, 0.0)
+    } else {
+      var jsx$1;
+      throw new $c_s_MatchError().init___O(x1)
+    }
+  };
+  var ns = $as_Lwebapp_people_Scores(jsx$1);
+  var this$2 = this.percs$1;
+  var x1$1 = this$2.get__O__s_Option(week);
+  if ($is_s_Some(x1$1)) {
+    var x2$1 = $as_s_Some(x1$1);
+    var jsx$2 = x2$1.x$2
+  } else {
+    var x$1 = $m_s_None$();
+    if ((x$1 === x1$1)) {
+      var jsx$2 = $m_sci_Nil$()
+    } else {
+      var jsx$2;
+      throw new $c_s_MatchError().init___O(x1$1)
+    }
+  };
+  var ps = $as_sci_List(jsx$2);
+  var this$3 = this.reps$1;
+  var x1$2 = this$3.get__O__s_Option(week);
+  if ($is_s_Some(x1$2)) {
+    var x2$2 = $as_s_Some(x1$2);
+    var jsx$3 = x2$2.x$2
+  } else {
+    var x$2 = $m_s_None$();
+    if ((x$2 === x1$2)) {
+      var jsx$3 = $m_sci_Nil$()
+    } else {
+      var jsx$3;
+      throw new $c_s_MatchError().init___O(x1$2)
+    }
+  };
+  var rs = $as_sci_List(jsx$3);
+  var this$4 = $m_sci_List$();
+  var bf = this$4.ReusableCBFInstance$2;
+  var prs = $as_sci_List($s_sc_IterableLike$class__zip__sc_IterableLike__sc_GenIterable__scg_CanBuildFrom__O(rs, ps, bf));
+  var f$2 = (function(f$1, ns$1) {
+    return (function(x0$1$2) {
+      var x0$1 = $as_T2(x0$1$2);
+      if ((x0$1 !== null)) {
+        var r = x0$1.$$und1$mcI$sp__I();
+        var p = $uD(x0$1.$$und2__O());
+        return new $c_T3().init___O__O__O(r, p, $doubleToInt((p * $uD(f$1.apply__O__O(ns$1)))))
+      } else {
+        throw new $c_s_MatchError().init___O(x0$1)
+      }
+    })
+  })(f, ns);
+  var this$5 = $m_sci_List$();
+  var bf$1 = this$5.ReusableCBFInstance$2;
+  if ((bf$1 === $m_sci_List$().ReusableCBFInstance$2)) {
+    if ((prs === $m_sci_Nil$())) {
+      var jsx$4 = $m_sci_Nil$()
+    } else {
+      var arg1 = prs.head__O();
+      var h = new $c_sci_$colon$colon().init___O__sci_List(f$2(arg1), $m_sci_Nil$());
+      var t = h;
+      var rest = prs.tail__sci_List();
+      while ((rest !== $m_sci_Nil$())) {
+        var arg1$1 = rest.head__O();
+        var nx = new $c_sci_$colon$colon().init___O__sci_List(f$2(arg1$1), $m_sci_Nil$());
+        t.tl$5 = nx;
+        t = nx;
+        var this$6 = rest;
+        rest = this$6.tail__sci_List()
+      };
+      var jsx$4 = h
+    }
+  } else {
+    var b = $s_sc_TraversableLike$class__builder$1__p0__sc_TraversableLike__scg_CanBuildFrom__scm_Builder(prs, bf$1);
+    var these = prs;
+    while ((!these.isEmpty__Z())) {
+      var arg1$2 = these.head__O();
+      b.$$plus$eq__O__scm_Builder(f$2(arg1$2));
+      var this$7 = these;
+      these = this$7.tail__sci_List()
+    };
+    var jsx$4 = b.result__O()
+  };
+  return $as_sci_List(jsx$4)
+});
+$c_Lwebapp_people_StevesData$.prototype.strict__T__I__sci_List = (function(name, week) {
   return this.weights__T__I__F1__sci_List(name, week, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$5$2) {
-    var x$5 = $as_Ltutorial_webapp_people_Scores(x$5$2);
+    var x$5 = $as_Lwebapp_people_Scores(x$5$2);
     return x$5.strict$1
   })))
 });
-$c_Ltutorial_webapp_people_StevesData$.prototype.bench__T__I__sci_List = (function(name, week) {
+$c_Lwebapp_people_StevesData$.prototype.bench__T__I__sci_List = (function(name, week) {
   return this.weights__T__I__F1__sci_List(name, week, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$4$2) {
-    var x$4 = $as_Ltutorial_webapp_people_Scores(x$4$2);
+    var x$4 = $as_Lwebapp_people_Scores(x$4$2);
     return x$4.bench$1
   })))
 });
-$c_Ltutorial_webapp_people_StevesData$.prototype.squat__T__I__sci_List = (function(name, week) {
+$c_Lwebapp_people_StevesData$.prototype.squat__T__I__sci_List = (function(name, week) {
   return this.weights__T__I__F1__sci_List(name, week, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$1$2) {
-    var x$1 = $as_Ltutorial_webapp_people_Scores(x$1$2);
+    var x$1 = $as_Lwebapp_people_Scores(x$1$2);
     return x$1.squat$1
   })))
 });
-$c_Ltutorial_webapp_people_StevesData$.prototype.deadlift__T__I__sci_List = (function(name, week) {
+$c_Lwebapp_people_StevesData$.prototype.deadlift__T__I__sci_List = (function(name, week) {
   return this.weights__T__I__F1__sci_List(name, week, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$3$2) {
-    var x$3 = $as_Ltutorial_webapp_people_Scores(x$3$2);
+    var x$3 = $as_Lwebapp_people_Scores(x$3$2);
     return x$3.deadlift$1
   })))
 });
-$c_Ltutorial_webapp_people_StevesData$.prototype.front__T__I__sci_List = (function(name, week) {
+$c_Lwebapp_people_StevesData$.prototype.front__T__I__sci_List = (function(name, week) {
   return this.weights__T__I__F1__sci_List(name, week, new $c_sjsr_AnonFunction1().init___sjs_js_Function1((function(x$2$2) {
-    var x$2 = $as_Ltutorial_webapp_people_Scores(x$2$2);
+    var x$2 = $as_Lwebapp_people_Scores(x$2$2);
     return x$2.front$1
   })))
 });
-var $d_Ltutorial_webapp_people_StevesData$ = new $TypeData().initClass({
-  Ltutorial_webapp_people_StevesData$: 0
-}, false, "tutorial.webapp.people.StevesData$", {
-  Ltutorial_webapp_people_StevesData$: 1,
+var $d_Lwebapp_people_StevesData$ = new $TypeData().initClass({
+  Lwebapp_people_StevesData$: 0
+}, false, "webapp.people.StevesData$", {
+  Lwebapp_people_StevesData$: 1,
   O: 1
 });
-$c_Ltutorial_webapp_people_StevesData$.prototype.$classData = $d_Ltutorial_webapp_people_StevesData$;
-var $n_Ltutorial_webapp_people_StevesData$ = (void 0);
-function $m_Ltutorial_webapp_people_StevesData$() {
-  if ((!$n_Ltutorial_webapp_people_StevesData$)) {
-    $n_Ltutorial_webapp_people_StevesData$ = new $c_Ltutorial_webapp_people_StevesData$().init___()
+$c_Lwebapp_people_StevesData$.prototype.$classData = $d_Lwebapp_people_StevesData$;
+var $n_Lwebapp_people_StevesData$ = (void 0);
+function $m_Lwebapp_people_StevesData$() {
+  if ((!$n_Lwebapp_people_StevesData$)) {
+    $n_Lwebapp_people_StevesData$ = new $c_Lwebapp_people_StevesData$().init___()
   };
-  return $n_Ltutorial_webapp_people_StevesData$
+  return $n_Lwebapp_people_StevesData$
 }
 /** @constructor */
 function $c_jl_Character$() {
@@ -4392,26 +4527,26 @@ function $m_sr_Statics$() {
   return $n_sr_Statics$
 }
 /** @constructor */
-function $c_Ltutorial_webapp_TutorialApp$() {
+function $c_Lwebapp_App$() {
   $c_O.call(this)
 }
-$c_Ltutorial_webapp_TutorialApp$.prototype = new $h_O();
-$c_Ltutorial_webapp_TutorialApp$.prototype.constructor = $c_Ltutorial_webapp_TutorialApp$;
+$c_Lwebapp_App$.prototype = new $h_O();
+$c_Lwebapp_App$.prototype.constructor = $c_Lwebapp_App$;
 /** @constructor */
-function $h_Ltutorial_webapp_TutorialApp$() {
+function $h_Lwebapp_App$() {
   /*<skip>*/
 }
-$h_Ltutorial_webapp_TutorialApp$.prototype = $c_Ltutorial_webapp_TutorialApp$.prototype;
-$c_Ltutorial_webapp_TutorialApp$.prototype.init___ = (function() {
+$h_Lwebapp_App$.prototype = $c_Lwebapp_App$.prototype;
+$c_Lwebapp_App$.prototype.init___ = (function() {
   return this
 });
-$c_Ltutorial_webapp_TutorialApp$.prototype.main__V = (function() {
+$c_Lwebapp_App$.prototype.main__V = (function() {
   (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)((function() {
-    $m_Ltutorial_webapp_TutorialApp$().setupUI__V()
+    $m_Lwebapp_App$().setupUI__V()
   }))
 });
-$c_Ltutorial_webapp_TutorialApp$.prototype.setupUI__V = (function() {
-  var this$1 = $m_Ltutorial_webapp_people_StevesData$().nums$1;
+$c_Lwebapp_App$.prototype.setupUI__V = (function() {
+  var this$1 = $m_Lwebapp_people_StevesData$().nums$1;
   var this$2 = new $c_sci_MapLike$ImmutableDefaultKeySet().init___sci_MapLike(this$1);
   var this$3 = $s_sc_SetLike$class__toBuffer__sc_SetLike__scm_Buffer(this$2);
   var ord = $m_s_math_Ordering$String$();
@@ -4423,10 +4558,10 @@ $c_Ltutorial_webapp_TutorialApp$.prototype.setupUI__V = (function() {
   }))));
   (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#name").append(nss);
   (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#click-me-button").click((function() {
-    $m_Ltutorial_webapp_TutorialApp$().addClickedMessage__V()
+    $m_Lwebapp_App$().addClickedMessage__V()
   }))
 });
-$c_Ltutorial_webapp_TutorialApp$.prototype.addClickedMessage__V = (function() {
+$c_Lwebapp_App$.prototype.addClickedMessage__V = (function() {
   var this$2 = new $c_sci_StringOps().init___T($objectToString((0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#week").val()));
   var this$4 = $m_jl_Integer$();
   var s = this$2.repr$1;
@@ -4450,11 +4585,11 @@ $c_Ltutorial_webapp_TutorialApp$.prototype.addClickedMessage__V = (function() {
     i = ((1 + i) | 0)
   };
   var name = $as_T(b.result__O());
-  var _2 = $m_Ltutorial_webapp_people_StevesData$().squat__T__I__sci_List(name, week);
-  var _2$1 = $m_Ltutorial_webapp_people_StevesData$().front__T__I__sci_List(name, week);
-  var _2$2 = $m_Ltutorial_webapp_people_StevesData$().deadlift__T__I__sci_List(name, week);
-  var _2$3 = $m_Ltutorial_webapp_people_StevesData$().bench__T__I__sci_List(name, week);
-  var _2$4 = $m_Ltutorial_webapp_people_StevesData$().strict__T__I__sci_List(name, week);
+  var _2 = $m_Lwebapp_people_StevesData$().squat__T__I__sci_List(name, week);
+  var _2$1 = $m_Lwebapp_people_StevesData$().front__T__I__sci_List(name, week);
+  var _2$2 = $m_Lwebapp_people_StevesData$().deadlift__T__I__sci_List(name, week);
+  var _2$3 = $m_Lwebapp_people_StevesData$().bench__T__I__sci_List(name, week);
+  var _2$4 = $m_Lwebapp_people_StevesData$().strict__T__I__sci_List(name, week);
   this.cleanOld__Lorg_scalajs_jquery_JQuery();
   var jsx$1 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#main");
   var this$15 = _2.reverse__sci_List();
@@ -4463,13 +4598,13 @@ $c_Ltutorial_webapp_TutorialApp$.prototype.addClickedMessage__V = (function() {
   while ((!these.isEmpty__Z())) {
     var arg1$1 = acc;
     var arg2 = these.head__O();
-    var a = $as_T2(arg2);
+    var a = $as_T3(arg2);
     var b$1 = $as_T(arg1$1);
-    acc = (("" + new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<tr>\n                                      <td>1</td>\n                                      <td>", "</td>\n                                      <td>", "<td>\n                                    </tr>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a.$$und1$mcD$sp__D(), a.$$und2$mcI$sp__I()]))) + b$1);
+    acc = (("" + new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<tr>\n                                      <td>", "</td>\n                                      <td>", "</td>\n                                      <td>", "<td>\n                                    </tr>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a.$$und1$1, a.$$und2$1, a.$$und3$1]))) + b$1);
     these = $as_sc_LinearSeqOptimized(these.tail__O())
   };
   var trs = $as_T(acc);
-  var s$1 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<div class=\"col-md-6\">\n                    <h4>", "</h4>\n                                <table class=\"table table-striped\">\n                                  <thead>\n                                   <tr>\n                                      <th>set</th>\n                                      <th>ratio</th>\n                                      <th>weight</th>\n                                    </tr>\n                                  </thead>\n                                  <tbody>\n                                    ", "\n                                  </tbody>\n                                </table>\n                              </div>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Back squat", trs]));
+  var s$1 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<div class=\"col-md-6\">\n                    <h4>", "</h4>\n                                <table class=\"table table-striped\">\n                                  <thead>\n                                   <tr>\n                                      <th>reps</th>\n                                      <th>1RM ratio</th>\n                                      <th>weight</th>\n                                    </tr>\n                                  </thead>\n                                  <tbody>\n                                    ", "\n                                  </tbody>\n                                </table>\n                              </div>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Back squat", trs]));
   jsx$1.append(s$1);
   var jsx$2 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#main");
   var this$17 = _2$1.reverse__sci_List();
@@ -4478,13 +4613,13 @@ $c_Ltutorial_webapp_TutorialApp$.prototype.addClickedMessage__V = (function() {
   while ((!these$1.isEmpty__Z())) {
     var arg1$2 = acc$1;
     var arg2$1 = these$1.head__O();
-    var a$1 = $as_T2(arg2$1);
+    var a$1 = $as_T3(arg2$1);
     var b$2 = $as_T(arg1$2);
-    acc$1 = (("" + new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<tr>\n                                      <td>1</td>\n                                      <td>", "</td>\n                                      <td>", "<td>\n                                    </tr>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a$1.$$und1$mcD$sp__D(), a$1.$$und2$mcI$sp__I()]))) + b$2);
+    acc$1 = (("" + new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<tr>\n                                      <td>", "</td>\n                                      <td>", "</td>\n                                      <td>", "<td>\n                                    </tr>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a$1.$$und1$1, a$1.$$und2$1, a$1.$$und3$1]))) + b$2);
     these$1 = $as_sc_LinearSeqOptimized(these$1.tail__O())
   };
   var trs$1 = $as_T(acc$1);
-  var s$2 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<div class=\"col-md-6\">\n                    <h4>", "</h4>\n                                <table class=\"table table-striped\">\n                                  <thead>\n                                   <tr>\n                                      <th>set</th>\n                                      <th>ratio</th>\n                                      <th>weight</th>\n                                    </tr>\n                                  </thead>\n                                  <tbody>\n                                    ", "\n                                  </tbody>\n                                </table>\n                              </div>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Front squat", trs$1]));
+  var s$2 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<div class=\"col-md-6\">\n                    <h4>", "</h4>\n                                <table class=\"table table-striped\">\n                                  <thead>\n                                   <tr>\n                                      <th>reps</th>\n                                      <th>1RM ratio</th>\n                                      <th>weight</th>\n                                    </tr>\n                                  </thead>\n                                  <tbody>\n                                    ", "\n                                  </tbody>\n                                </table>\n                              </div>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Front squat", trs$1]));
   jsx$2.append(s$2);
   var jsx$3 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#main");
   var this$19 = _2$2.reverse__sci_List();
@@ -4493,13 +4628,13 @@ $c_Ltutorial_webapp_TutorialApp$.prototype.addClickedMessage__V = (function() {
   while ((!these$2.isEmpty__Z())) {
     var arg1$3 = acc$2;
     var arg2$2 = these$2.head__O();
-    var a$2 = $as_T2(arg2$2);
+    var a$2 = $as_T3(arg2$2);
     var b$3 = $as_T(arg1$3);
-    acc$2 = (("" + new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<tr>\n                                      <td>1</td>\n                                      <td>", "</td>\n                                      <td>", "<td>\n                                    </tr>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a$2.$$und1$mcD$sp__D(), a$2.$$und2$mcI$sp__I()]))) + b$3);
+    acc$2 = (("" + new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<tr>\n                                      <td>", "</td>\n                                      <td>", "</td>\n                                      <td>", "<td>\n                                    </tr>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a$2.$$und1$1, a$2.$$und2$1, a$2.$$und3$1]))) + b$3);
     these$2 = $as_sc_LinearSeqOptimized(these$2.tail__O())
   };
   var trs$2 = $as_T(acc$2);
-  var s$3 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<div class=\"col-md-6\">\n                    <h4>", "</h4>\n                                <table class=\"table table-striped\">\n                                  <thead>\n                                   <tr>\n                                      <th>set</th>\n                                      <th>ratio</th>\n                                      <th>weight</th>\n                                    </tr>\n                                  </thead>\n                                  <tbody>\n                                    ", "\n                                  </tbody>\n                                </table>\n                              </div>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Deadlift", trs$2]));
+  var s$3 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<div class=\"col-md-6\">\n                    <h4>", "</h4>\n                                <table class=\"table table-striped\">\n                                  <thead>\n                                   <tr>\n                                      <th>reps</th>\n                                      <th>1RM ratio</th>\n                                      <th>weight</th>\n                                    </tr>\n                                  </thead>\n                                  <tbody>\n                                    ", "\n                                  </tbody>\n                                </table>\n                              </div>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Deadlift", trs$2]));
   jsx$3.append(s$3);
   var jsx$4 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#main");
   var this$21 = _2$3.reverse__sci_List();
@@ -4508,13 +4643,13 @@ $c_Ltutorial_webapp_TutorialApp$.prototype.addClickedMessage__V = (function() {
   while ((!these$3.isEmpty__Z())) {
     var arg1$4 = acc$3;
     var arg2$3 = these$3.head__O();
-    var a$3 = $as_T2(arg2$3);
+    var a$3 = $as_T3(arg2$3);
     var b$4 = $as_T(arg1$4);
-    acc$3 = (("" + new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<tr>\n                                      <td>1</td>\n                                      <td>", "</td>\n                                      <td>", "<td>\n                                    </tr>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a$3.$$und1$mcD$sp__D(), a$3.$$und2$mcI$sp__I()]))) + b$4);
+    acc$3 = (("" + new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<tr>\n                                      <td>", "</td>\n                                      <td>", "</td>\n                                      <td>", "<td>\n                                    </tr>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a$3.$$und1$1, a$3.$$und2$1, a$3.$$und3$1]))) + b$4);
     these$3 = $as_sc_LinearSeqOptimized(these$3.tail__O())
   };
   var trs$3 = $as_T(acc$3);
-  var s$4 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<div class=\"col-md-6\">\n                    <h4>", "</h4>\n                                <table class=\"table table-striped\">\n                                  <thead>\n                                   <tr>\n                                      <th>set</th>\n                                      <th>ratio</th>\n                                      <th>weight</th>\n                                    </tr>\n                                  </thead>\n                                  <tbody>\n                                    ", "\n                                  </tbody>\n                                </table>\n                              </div>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Bench press", trs$3]));
+  var s$4 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<div class=\"col-md-6\">\n                    <h4>", "</h4>\n                                <table class=\"table table-striped\">\n                                  <thead>\n                                   <tr>\n                                      <th>reps</th>\n                                      <th>1RM ratio</th>\n                                      <th>weight</th>\n                                    </tr>\n                                  </thead>\n                                  <tbody>\n                                    ", "\n                                  </tbody>\n                                </table>\n                              </div>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Bench press", trs$3]));
   jsx$4.append(s$4);
   var jsx$5 = (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#main");
   var this$23 = _2$4.reverse__sci_List();
@@ -4523,42 +4658,41 @@ $c_Ltutorial_webapp_TutorialApp$.prototype.addClickedMessage__V = (function() {
   while ((!these$4.isEmpty__Z())) {
     var arg1$5 = acc$4;
     var arg2$4 = these$4.head__O();
-    var a$4 = $as_T2(arg2$4);
+    var a$4 = $as_T3(arg2$4);
     var b$5 = $as_T(arg1$5);
-    acc$4 = (("" + new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<tr>\n                                      <td>1</td>\n                                      <td>", "</td>\n                                      <td>", "<td>\n                                    </tr>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a$4.$$und1$mcD$sp__D(), a$4.$$und2$mcI$sp__I()]))) + b$5);
+    acc$4 = (("" + new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<tr>\n                                      <td>", "</td>\n                                      <td>", "</td>\n                                      <td>", "<td>\n                                    </tr>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array([a$4.$$und1$1, a$4.$$und2$1, a$4.$$und3$1]))) + b$5);
     these$4 = $as_sc_LinearSeqOptimized(these$4.tail__O())
   };
   var trs$4 = $as_T(acc$4);
-  var s$5 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<div class=\"col-md-6\">\n                    <h4>", "</h4>\n                                <table class=\"table table-striped\">\n                                  <thead>\n                                   <tr>\n                                      <th>set</th>\n                                      <th>ratio</th>\n                                      <th>weight</th>\n                                    </tr>\n                                  </thead>\n                                  <tbody>\n                                    ", "\n                                  </tbody>\n                                </table>\n                              </div>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Strict press", trs$4]));
+  var s$5 = new $c_s_StringContext().init___sc_Seq(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["<div class=\"col-md-6\">\n                    <h4>", "</h4>\n                                <table class=\"table table-striped\">\n                                  <thead>\n                                   <tr>\n                                      <th>reps</th>\n                                      <th>1RM ratio</th>\n                                      <th>weight</th>\n                                    </tr>\n                                  </thead>\n                                  <tbody>\n                                    ", "\n                                  </tbody>\n                                </table>\n                              </div>"])).s__sc_Seq__T(new $c_sjs_js_WrappedArray().init___sjs_js_Array(["Strict press", trs$4]));
   jsx$5.append(s$5)
 });
-$c_Ltutorial_webapp_TutorialApp$.prototype.$$js$exported$meth$main__O = (function() {
+$c_Lwebapp_App$.prototype.$$js$exported$meth$main__O = (function() {
   this.main__V()
 });
-$c_Ltutorial_webapp_TutorialApp$.prototype.cleanOld__Lorg_scalajs_jquery_JQuery = (function() {
+$c_Lwebapp_App$.prototype.cleanOld__Lorg_scalajs_jquery_JQuery = (function() {
   return (0, $m_Lorg_scalajs_jquery_package$().jQuery$1)("#main").empty()
 });
-$c_Ltutorial_webapp_TutorialApp$.prototype.main = (function() {
+$c_Lwebapp_App$.prototype.main = (function() {
   return this.$$js$exported$meth$main__O()
 });
-var $d_Ltutorial_webapp_TutorialApp$ = new $TypeData().initClass({
-  Ltutorial_webapp_TutorialApp$: 0
-}, false, "tutorial.webapp.TutorialApp$", {
-  Ltutorial_webapp_TutorialApp$: 1,
+var $d_Lwebapp_App$ = new $TypeData().initClass({
+  Lwebapp_App$: 0
+}, false, "webapp.App$", {
+  Lwebapp_App$: 1,
   O: 1,
   sjs_js_JSApp: 1
 });
-$c_Ltutorial_webapp_TutorialApp$.prototype.$classData = $d_Ltutorial_webapp_TutorialApp$;
-var $n_Ltutorial_webapp_TutorialApp$ = (void 0);
-function $m_Ltutorial_webapp_TutorialApp$() {
-  if ((!$n_Ltutorial_webapp_TutorialApp$)) {
-    $n_Ltutorial_webapp_TutorialApp$ = new $c_Ltutorial_webapp_TutorialApp$().init___()
+$c_Lwebapp_App$.prototype.$classData = $d_Lwebapp_App$;
+var $n_Lwebapp_App$ = (void 0);
+function $m_Lwebapp_App$() {
+  if ((!$n_Lwebapp_App$)) {
+    $n_Lwebapp_App$ = new $c_Lwebapp_App$().init___()
   };
-  return $n_Ltutorial_webapp_TutorialApp$
+  return $n_Lwebapp_App$
 }
-$e.tutorial = ($e.tutorial || {});
-$e.tutorial.webapp = ($e.tutorial.webapp || {});
-$e.tutorial.webapp.TutorialApp = $m_Ltutorial_webapp_TutorialApp$;
+$e.webapp = ($e.webapp || {});
+$e.webapp.App = $m_Lwebapp_App$;
 var $d_jl_Boolean = new $TypeData().initClass({
   jl_Boolean: 0
 }, false, "java.lang.Boolean", {
@@ -7184,7 +7318,7 @@ var $d_sjsr_RuntimeLong = new $TypeData().initClass({
 });
 $c_sjsr_RuntimeLong.prototype.$classData = $d_sjsr_RuntimeLong;
 /** @constructor */
-function $c_Ltutorial_webapp_people_Scores() {
+function $c_Lwebapp_people_Scores() {
   $c_O.call(this);
   this.squat$1 = 0.0;
   this.front$1 = 0.0;
@@ -7192,30 +7326,30 @@ function $c_Ltutorial_webapp_people_Scores() {
   this.bench$1 = 0.0;
   this.strict$1 = 0.0
 }
-$c_Ltutorial_webapp_people_Scores.prototype = new $h_O();
-$c_Ltutorial_webapp_people_Scores.prototype.constructor = $c_Ltutorial_webapp_people_Scores;
+$c_Lwebapp_people_Scores.prototype = new $h_O();
+$c_Lwebapp_people_Scores.prototype.constructor = $c_Lwebapp_people_Scores;
 /** @constructor */
-function $h_Ltutorial_webapp_people_Scores() {
+function $h_Lwebapp_people_Scores() {
   /*<skip>*/
 }
-$h_Ltutorial_webapp_people_Scores.prototype = $c_Ltutorial_webapp_people_Scores.prototype;
-$c_Ltutorial_webapp_people_Scores.prototype.productPrefix__T = (function() {
+$h_Lwebapp_people_Scores.prototype = $c_Lwebapp_people_Scores.prototype;
+$c_Lwebapp_people_Scores.prototype.productPrefix__T = (function() {
   return "Scores"
 });
-$c_Ltutorial_webapp_people_Scores.prototype.productArity__I = (function() {
+$c_Lwebapp_people_Scores.prototype.productArity__I = (function() {
   return 5
 });
-$c_Ltutorial_webapp_people_Scores.prototype.equals__O__Z = (function(x$1) {
+$c_Lwebapp_people_Scores.prototype.equals__O__Z = (function(x$1) {
   if ((this === x$1)) {
     return true
-  } else if ($is_Ltutorial_webapp_people_Scores(x$1)) {
-    var Scores$1 = $as_Ltutorial_webapp_people_Scores(x$1);
+  } else if ($is_Lwebapp_people_Scores(x$1)) {
+    var Scores$1 = $as_Lwebapp_people_Scores(x$1);
     return (((((this.squat$1 === Scores$1.squat$1) && (this.front$1 === Scores$1.front$1)) && (this.deadlift$1 === Scores$1.deadlift$1)) && (this.bench$1 === Scores$1.bench$1)) && (this.strict$1 === Scores$1.strict$1))
   } else {
     return false
   }
 });
-$c_Ltutorial_webapp_people_Scores.prototype.productElement__I__O = (function(x$1) {
+$c_Lwebapp_people_Scores.prototype.productElement__I__O = (function(x$1) {
   switch (x$1) {
     case 0: {
       return this.squat$1;
@@ -7242,10 +7376,10 @@ $c_Ltutorial_webapp_people_Scores.prototype.productElement__I__O = (function(x$1
     }
   }
 });
-$c_Ltutorial_webapp_people_Scores.prototype.toString__T = (function() {
+$c_Lwebapp_people_Scores.prototype.toString__T = (function() {
   return $m_sr_ScalaRunTime$().$$undtoString__s_Product__T(this)
 });
-$c_Ltutorial_webapp_people_Scores.prototype.init___D__D__D__D__D = (function(squat, front, deadlift, bench, strict) {
+$c_Lwebapp_people_Scores.prototype.init___D__D__D__D__D = (function(squat, front, deadlift, bench, strict) {
   this.squat$1 = squat;
   this.front$1 = front;
   this.deadlift$1 = deadlift;
@@ -7253,7 +7387,7 @@ $c_Ltutorial_webapp_people_Scores.prototype.init___D__D__D__D__D = (function(squ
   this.strict$1 = strict;
   return this
 });
-$c_Ltutorial_webapp_people_Scores.prototype.hashCode__I = (function() {
+$c_Lwebapp_people_Scores.prototype.hashCode__I = (function() {
   var acc = (-889275714);
   acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.squat$1));
   acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.front$1));
@@ -7262,32 +7396,32 @@ $c_Ltutorial_webapp_people_Scores.prototype.hashCode__I = (function() {
   acc = $m_sr_Statics$().mix__I__I__I(acc, $m_sr_Statics$().doubleHash__D__I(this.strict$1));
   return $m_sr_Statics$().finalizeHash__I__I__I(acc, 5)
 });
-$c_Ltutorial_webapp_people_Scores.prototype.productIterator__sc_Iterator = (function() {
+$c_Lwebapp_people_Scores.prototype.productIterator__sc_Iterator = (function() {
   return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
 });
-function $is_Ltutorial_webapp_people_Scores(obj) {
-  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Ltutorial_webapp_people_Scores)))
+function $is_Lwebapp_people_Scores(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.Lwebapp_people_Scores)))
 }
-function $as_Ltutorial_webapp_people_Scores(obj) {
-  return (($is_Ltutorial_webapp_people_Scores(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "tutorial.webapp.people.Scores"))
+function $as_Lwebapp_people_Scores(obj) {
+  return (($is_Lwebapp_people_Scores(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "webapp.people.Scores"))
 }
-function $isArrayOf_Ltutorial_webapp_people_Scores(obj, depth) {
-  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Ltutorial_webapp_people_Scores)))
+function $isArrayOf_Lwebapp_people_Scores(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.Lwebapp_people_Scores)))
 }
-function $asArrayOf_Ltutorial_webapp_people_Scores(obj, depth) {
-  return (($isArrayOf_Ltutorial_webapp_people_Scores(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Ltutorial.webapp.people.Scores;", depth))
+function $asArrayOf_Lwebapp_people_Scores(obj, depth) {
+  return (($isArrayOf_Lwebapp_people_Scores(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lwebapp.people.Scores;", depth))
 }
-var $d_Ltutorial_webapp_people_Scores = new $TypeData().initClass({
-  Ltutorial_webapp_people_Scores: 0
-}, false, "tutorial.webapp.people.Scores", {
-  Ltutorial_webapp_people_Scores: 1,
+var $d_Lwebapp_people_Scores = new $TypeData().initClass({
+  Lwebapp_people_Scores: 0
+}, false, "webapp.people.Scores", {
+  Lwebapp_people_Scores: 1,
   O: 1,
   s_Product: 1,
   s_Equals: 1,
   s_Serializable: 1,
   Ljava_io_Serializable: 1
 });
-$c_Ltutorial_webapp_people_Scores.prototype.$classData = $d_Ltutorial_webapp_people_Scores;
+$c_Lwebapp_people_Scores.prototype.$classData = $d_Lwebapp_people_Scores;
 /** @constructor */
 function $c_jl_ArithmeticException() {
   $c_jl_RuntimeException.call(this)
@@ -8731,6 +8865,9 @@ $h_T2.prototype = $c_T2.prototype;
 $c_T2.prototype.productPrefix__T = (function() {
   return "Tuple2"
 });
+$c_T2.prototype.$$und1$mcI$sp__I = (function() {
+  return $uI(this.$$und1__O())
+});
 $c_T2.prototype.productArity__I = (function() {
   return 2
 });
@@ -8743,9 +8880,6 @@ $c_T2.prototype.equals__O__Z = (function(x$1) {
   } else {
     return false
   }
-});
-$c_T2.prototype.$$und1$mcD$sp__D = (function() {
-  return $uD(this.$$und1__O())
 });
 $c_T2.prototype.productElement__I__O = (function(n) {
   return $s_s_Product2$class__productElement__s_Product2__I__O(this, n)
@@ -8760,9 +8894,6 @@ $c_T2.prototype.toString__T = (function() {
 });
 $c_T2.prototype.$$und2__O = (function() {
   return this.$$und2$f
-});
-$c_T2.prototype.$$und2$mcI$sp__I = (function() {
-  return $uI(this.$$und2__O())
 });
 $c_T2.prototype.hashCode__I = (function() {
   var this$2 = $m_s_util_hashing_MurmurHash3$();
@@ -8798,6 +8929,79 @@ var $d_T2 = new $TypeData().initClass({
   Ljava_io_Serializable: 1
 });
 $c_T2.prototype.$classData = $d_T2;
+/** @constructor */
+function $c_T3() {
+  $c_O.call(this);
+  this.$$und1$1 = null;
+  this.$$und2$1 = null;
+  this.$$und3$1 = null
+}
+$c_T3.prototype = new $h_O();
+$c_T3.prototype.constructor = $c_T3;
+/** @constructor */
+function $h_T3() {
+  /*<skip>*/
+}
+$h_T3.prototype = $c_T3.prototype;
+$c_T3.prototype.productPrefix__T = (function() {
+  return "Tuple3"
+});
+$c_T3.prototype.productArity__I = (function() {
+  return 3
+});
+$c_T3.prototype.equals__O__Z = (function(x$1) {
+  if ((this === x$1)) {
+    return true
+  } else if ($is_T3(x$1)) {
+    var Tuple3$1 = $as_T3(x$1);
+    return (($m_sr_BoxesRunTime$().equals__O__O__Z(this.$$und1$1, Tuple3$1.$$und1$1) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.$$und2$1, Tuple3$1.$$und2$1)) && $m_sr_BoxesRunTime$().equals__O__O__Z(this.$$und3$1, Tuple3$1.$$und3$1))
+  } else {
+    return false
+  }
+});
+$c_T3.prototype.productElement__I__O = (function(n) {
+  return $s_s_Product3$class__productElement__s_Product3__I__O(this, n)
+});
+$c_T3.prototype.toString__T = (function() {
+  return (((((("(" + this.$$und1$1) + ",") + this.$$und2$1) + ",") + this.$$und3$1) + ")")
+});
+$c_T3.prototype.init___O__O__O = (function(_1, _2, _3) {
+  this.$$und1$1 = _1;
+  this.$$und2$1 = _2;
+  this.$$und3$1 = _3;
+  return this
+});
+$c_T3.prototype.hashCode__I = (function() {
+  var this$2 = $m_s_util_hashing_MurmurHash3$();
+  return this$2.productHash__s_Product__I__I(this, (-889275714))
+});
+$c_T3.prototype.productIterator__sc_Iterator = (function() {
+  return new $c_sr_ScalaRunTime$$anon$1().init___s_Product(this)
+});
+function $is_T3(obj) {
+  return (!(!((obj && obj.$classData) && obj.$classData.ancestors.T3)))
+}
+function $as_T3(obj) {
+  return (($is_T3(obj) || (obj === null)) ? obj : $throwClassCastException(obj, "scala.Tuple3"))
+}
+function $isArrayOf_T3(obj, depth) {
+  return (!(!(((obj && obj.$classData) && (obj.$classData.arrayDepth === depth)) && obj.$classData.arrayBase.ancestors.T3)))
+}
+function $asArrayOf_T3(obj, depth) {
+  return (($isArrayOf_T3(obj, depth) || (obj === null)) ? obj : $throwArrayCastException(obj, "Lscala.Tuple3;", depth))
+}
+var $d_T3 = new $TypeData().initClass({
+  T3: 0
+}, false, "scala.Tuple3", {
+  T3: 1,
+  O: 1,
+  s_Product3: 1,
+  s_Product: 1,
+  s_Equals: 1,
+  s_Serializable: 1,
+  Ljava_io_Serializable: 1
+});
+$c_T3.prototype.$classData = $d_T3;
 /** @constructor */
 function $c_jl_NumberFormatException() {
   $c_jl_IllegalArgumentException.call(this)
@@ -9517,51 +9721,6 @@ function $m_sjs_js_WrappedArray$() {
   };
   return $n_sjs_js_WrappedArray$
 }
-/** @constructor */
-function $c_s_Tuple2$mcDI$sp() {
-  $c_T2.call(this);
-  this.$$und1$mcD$sp$f = 0.0;
-  this.$$und2$mcI$sp$f = 0
-}
-$c_s_Tuple2$mcDI$sp.prototype = new $h_T2();
-$c_s_Tuple2$mcDI$sp.prototype.constructor = $c_s_Tuple2$mcDI$sp;
-/** @constructor */
-function $h_s_Tuple2$mcDI$sp() {
-  /*<skip>*/
-}
-$h_s_Tuple2$mcDI$sp.prototype = $c_s_Tuple2$mcDI$sp.prototype;
-$c_s_Tuple2$mcDI$sp.prototype.$$und1$mcD$sp__D = (function() {
-  return this.$$und1$mcD$sp$f
-});
-$c_s_Tuple2$mcDI$sp.prototype.$$und2__O = (function() {
-  return this.$$und2$mcI$sp$f
-});
-$c_s_Tuple2$mcDI$sp.prototype.$$und2$mcI$sp__I = (function() {
-  return this.$$und2$mcI$sp$f
-});
-$c_s_Tuple2$mcDI$sp.prototype.init___D__I = (function(_1$mcD$sp, _2$mcI$sp) {
-  this.$$und1$mcD$sp$f = _1$mcD$sp;
-  this.$$und2$mcI$sp$f = _2$mcI$sp;
-  $c_T2.prototype.init___O__O.call(this, null, null);
-  return this
-});
-$c_s_Tuple2$mcDI$sp.prototype.$$und1__O = (function() {
-  return this.$$und1$mcD$sp$f
-});
-var $d_s_Tuple2$mcDI$sp = new $TypeData().initClass({
-  s_Tuple2$mcDI$sp: 0
-}, false, "scala.Tuple2$mcDI$sp", {
-  s_Tuple2$mcDI$sp: 1,
-  T2: 1,
-  O: 1,
-  s_Product2: 1,
-  s_Product: 1,
-  s_Equals: 1,
-  s_Serializable: 1,
-  Ljava_io_Serializable: 1,
-  s_Product2$mcDI$sp: 1
-});
-$c_s_Tuple2$mcDI$sp.prototype.$classData = $d_s_Tuple2$mcDI$sp;
 /** @constructor */
 function $c_s_math_Ordering$String$() {
   $c_O.call(this)
